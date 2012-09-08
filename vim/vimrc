@@ -1,0 +1,52 @@
+" VIM configuration
+runtime! debian.vim
+
+" Color theme synthaxe
+syntax on
+:colorscheme xoria256
+
+" Pathogen
+call pathogen#infect()
+
+filetype plugin indent on
+
+" NERDTree aptitude
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+set encoding=utf-8
+set laststatus=2
+set termencoding=utf-8
+set title
+set nu
+set nocompatible		" Breaks compatibility with original vi
+set history=100			" Lines of command history
+set showcmd			" Show incomplete commands
+set nohlsearch			" Don't highlight searched-for phrases
+set incsearch			" Start search while typing
+"set list			" Show special chars
+"set listchars=tab:··,trail:»
+set expandtab
+set softtabstop=8
+set shiftwidth=2
+set tabstop=8
+set tabpagemax=5
+set backspace=indent,eol,start	" Allow backspace in insert mode
+
+" Powerline
+let g:Powerline_symbols = 'fancy'
+
+" auctoclosebrackets
+inoremap {<CR> {<CR>}<Left>
+
+" map
+map <S-T>	<ESC>:tabnew<CR>
+map <C-a>	<ESC>:tabprevious<CR>
+map <C-p>	<ESC>:tabnext<CR>
+map <S-M>	<ESC>:NERDTreeToggle<CR>
+map <C-X>	<ESC>:wq<CR>
+
+" Source a global configuration file if available
+if filereadable("/etc/vim/vimrc.local")
+  source /etc/vim/vimrc.local
+endif

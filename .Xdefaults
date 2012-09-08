@@ -1,0 +1,95 @@
+! Colors
+! tangoesque scheme
+
+*background: #ffffff
+*foreground: #acacac
+
+! Black (not tango) + DarkGrey
+*color0:  #000000
+*color8:  #555753
+
+! DarkRed + Red
+*color1:  #ff6565
+!  Archive
+*color9:  #E60A3D
+
+! DarkGreen + Green
+*color2:  #93d44f
+*color10: #2DCC28
+!#c8e7a8
+
+! DarkYellow + Yellow
+*color3:  #eab93d
+*color11: #ffc123
+
+! DarkBlue + Blue
+*color4:  #204a87
+! Dossier
+*color12: #0A95E6
+!#3465a4
+
+! DarkMangenta + Mangenta
+*color5:  #ce5c00
+*color13: #f57900
+
+!DarkCyan + Cyan (both not tango)
+*color6:  #89b6e2
+*color14: #46a4ff
+
+! LightGrey + White
+*color7:  #cccccc
+*color15: #ffffff
+
+/* xterm */
+xterm*background:       black
+xterm*geometry:         80x25
+xterm*termName:         xterm-256color
+xterm*faceName:         DejaVu Sans Mono for Powerline:Book:pixelsize=12
+! xterm*font:             -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+! xterm*font:             xft:DejaVu Sans Mono for Powerline:bold:size=12
+! xterm*imFont:           xft:DejaVu Sans Mono for Powerline:bold:size=12
+! xterm*boldFont:         xft:DejaVu Sans Mono for Powerline:bold:size=12
+! xterm*italicFont:       xft:DejaVu Sans Mono for Powerline:size=12
+! xterm*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=12
+xterm*utf8:             2
+xterm*dynamicColors:    true
+xterm*saveLines:        512
+xterm*scrollTtyKeypress:true
+xterm*scrollTtyOutput:  false
+xterm*scrollBar:        false
+xterm*rightScrollBar:   false
+xterm*jumpScroll:       true
+xterm*multiScroll:      true
+xterm*toolBar:          false
+xterm*metaSendsEscape:  true
+xterm*eightBitInput:    false
+xterm*visualBell:       false
+
+
+URxvt*background:       #1b1b1b
+URxvt*geometry:         80x25
+URxvt*termName:         xterm-256color
+! URxvt*faceName:         DejaVu Sans Mono for Powerline:Book:pixelsize=12
+!URxvt*font:             xft:Monaco for Powerline:regular:size=8
+!URxvt*imFont:           xft:Monaco for Powerline:regular:size=8
+!URxvt*boldFont:         xft:Monaco for Powerline:bold:size=8
+!URxvt*italicFont:       xft:Monaco for Powerline:italic:size=8
+!URxvt*boldItalicFont:   xft:Monaco for Powerline:bold:italic:size=8
+!xterm*font:             -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=10
+URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=10
+URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=10
+URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=10
+URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=10
+URxvt*utf8:             2
+URxvt*dynamicColors:    true
+URxvt*saveLines:        512
+URxvt*scrollTtyKeypress:true
+URxvt*scrollTtyOutput:  false
+URxvt*scrollBar:        false
+URxvt*rightScrollBar:   false
+URxvt*jumpScroll:       true
+URxvt*multiScroll:      true
+URxvt*toolBar:          false
+URxvt*metaSendsEscape:  true
+URxvt*eightBitInput:    false
