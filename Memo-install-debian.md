@@ -34,9 +34,9 @@ Vive la simplicité et légéreté.
 ### Se connecter à internet avec le wi-fi
 
 Installer le paquet firmware-iwlwifi.deb (Ne pas oublier de le mettre à porter de main, comme une clé usb)
-Configurer la conf dans : /etc/wpa_supplicant/
-Ajouter la configuration à /etc/network/interfaces
-`ifup wlan0='NomDeMaConf'`
+* Configurer la conf dans : /etc/wpa_supplicant/
+* Ajouter la configuration à /etc/network/interfaces
+* `ifup wlan0='NomDeMaConf'`
 
 Et le tour est joué
 
@@ -49,17 +49,17 @@ Modifier la source-list dans /etc/apt/ et y mettre les depots Wheezy.
 
 > Pourquoi la wheezy ?
 
-J'utilise actuellement la powerline pour vim, l'encodage ne fonctionne pas correctement sous xterm et sous la version Squeezy que j'avais, rxvt possèdait l'encodage mais pas les 256 couleurs (pour limiter les prises de tête, l'encodage de la police ma suffit je suis passé sous la wheezy).
+J'utilise actuellement la powerline pour vim, l'encodage ne fonctionne pas correctement sous xterm et sous la version Squeezy que j'avais, rxvt possèdait l'encodage mais pas les 256 couleurs (pour limiter les prises de tête, l'encodage de la police ma suffit, je suis passé sous la wheezy).
 
 Ndla: Noyau Linux - Wheezy 3.20 - Squeezy 2.64
 
-`aptitude update
-aptitude upgrade
-reboot`
+* `aptitude update`
+* `aptitude upgrade`
+* `reboot`
 
 une fois de retour un petit ajout de votre utilisateur dans /etc/sudoers
 
-`aptitude install sudo`
+* `aptitude install sudo`
 
 Vous pouvez enfin quitter l'utilisateur root.
 
@@ -70,23 +70,23 @@ Vous pouvez enfin quitter l'utilisateur root.
 
 ### Installation
 
-`aptitude install i3 xorg slim
-reboot`
+* `aptitude install i3 xorg slim`
+* `reboot`
 
 
 ### Google-chrome
 
-Prévoir le paquet .deb sinon installer un navigateur open source pour le dl.
-Tentez de l'installer, récupérer les lib manquante et les installer.
+Prévoir le paquet .deb sinon installez un navigateur open source pour le dl.
+Tentez de l'installer, récupérez les lib manquante et les installer.
 Installez.
 
 
 ### Le son & Beep
 
-`aptitude install alsamixergui alsa-base`
+* `aptitude install alsamixergui alsa-base`
 
-Lancez alsamixergui activer tous les haut-parleurs.
-Lancez alsamixer se rendre sur la dernière barre "Beep" appuyez sur 'm' pour la mute.
+Lancez alsamixergui, activez tous les haut-parleurs.
+Lancez alsamixer, se rendre sur la dernière barre "Beep" appuyez sur 'm' pour la mute.
 
 
 ### Le micro & Webcam
@@ -97,7 +97,7 @@ Lancez un Hangout, télécharger et installer le paquet proposé.
 
 ### Les vidéos flash
 
-Allez sur adobe et télécharger ainsi qu'installer le plugin adobe flash player.
+Allez sur adobe et téléchargez ainsi qu'installez le plugin adobe flash player.
 
 ### Installation Annexe de Base
 
@@ -114,7 +114,7 @@ Allez sur adobe et télécharger ainsi qu'installer le plugin adobe flash player
 * tree : une arborescence
 * valgrind
 
-> Vérifier que gcc et toute la bande sont bien installés
+> Vérifiez que gcc et toute la bande sont bien installés
 
 ### Installation Annexe +
 
