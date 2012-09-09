@@ -36,7 +36,9 @@ Vive la simplicité et légéreté.
 Installer le paquet firmware-iwlwifi.deb (Ne pas oublier de le mettre à porter de main, comme une clé usb)
 Configurer la conf dans : /etc/wpa_supplicant/
 Ajouter la configuration à /etc/network/interfaces
-Un ifup wlan0='NomDeMaConf' et le tour est joué
+`ifup wlan0='NomDeMaConf'`
+
+Et le tour est joué
 
 NOTE: vos meilleurs amis mount, su, dpkg -i
 
@@ -51,13 +53,14 @@ J'utilise actuellement la powerline pour vim, l'encodage ne fonctionne pas corre
 
 Ndla: Noyau Linux - Wheezy 3.20 - Squeezy 2.64
 
-aptitude update
+`aptitude update
 aptitude upgrade
-reboot
+reboot`
 
 une fois de retour un petit ajout de votre utilisateur dans /etc/sudoers
 
-aptitude install sudo
+`aptitude install sudo`
+
 Vous pouvez enfin quitter l'utilisateur root.
 
 
@@ -67,8 +70,8 @@ Vous pouvez enfin quitter l'utilisateur root.
 
 ### Installation
 
-aptitude install i3 xorg slim
-reboot
+`aptitude install i3 xorg slim
+reboot`
 
 
 ### Google-chrome
@@ -80,7 +83,7 @@ Installez.
 
 ### Le son & Beep
 
-aptitude install alsamixergui alsa-base
+`aptitude install alsamixergui alsa-base`
 
 Lancez alsamixergui activer tous les haut-parleurs.
 Lancez alsamixer se rendre sur la dernière barre "Beep" appuyez sur 'm' pour la mute.
@@ -98,26 +101,26 @@ Allez sur adobe et télécharger ainsi qu'installer le plugin adobe flash player
 
 ### Installation Annexe de Base
 
-qiv : visonneur d'image dans le terminal
-imagemagick : permet de resizer/convertir des images
-vlc : rien de mieux
-gimp : photoshop :'(
-git
-ssh
-xclip
-feh : permet de mettre un fond d'ecran
-vim ou emacs : rien n'equivaux ces deux là.
-openoffice
-tree : une arborescence
-valgrind
+* qiv : visonneur d'image dans le terminal
+* imagemagick : permet de resizer/convertir des images
+* vlc : rien de mieux
+* gimp : photoshop :'(
+* git
+* ssh
+* xclip
+* feh : permet de mettre un fond d'ecran
+* vim ou emacs : rien n'equivaux ces deux là.
+* openoffice
+* tree : une arborescence
+* valgrind
 
 > Vérifier que gcc et toute la bande sont bien installés
 
 ### Installation Annexe +
 
-Configuration de vim, rxterm-unicode-256colors, powerline : vim/README.rd
-Configuration de i3 : i3/README.rd
-Configuration de slim : slim-theme-steingate/README.rd
+* Configuration de vim, rxterm-unicode-256colors, powerline : vim/README.rd
+* Configuration de i3 : i3/README.rd
+* Configuration de slim : slim-theme-steingate/README.rd
 
 
 
