@@ -145,23 +145,29 @@ bindsym Return mode "default"
 bindsym Escape mode "default"
 }
 
+##
+# Les bindcodes sont propres à mon pc (touche tactile).
+# Necessite alsa-base
+# Couper/Ouvrir les haut-parleurs
 bindcode 121 exec amixer -c 0 set Master toggle
+# Diminuer le son
 bindcode 122 exec amixer -c 0 set Master 1-
+# Augmenter le son
 bindcode 123 exec amixer -c 0 set Master 1+ unmute
+##
 
+# Raccourcis
 bindsym $mod+r mode "resize"
-bindsym $mod+Shift+z exec google-chrome
+bindsym $mod+Shift+z exec opera
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#exec i3status | dzen2 -ta r -fg grey -fn lucidasans-8 -w 700 -y 1064 -x 1217 -bg black
-#exec i3bar -d
-
+# Active le pavé numérique à notre arrivé, requiert le paquet du même nom
 exec numlockx on
+# Notre conf des terminaux
 exec xrdb /home/kyndt/.Xdefault
+# Fond d'ecran
 exec feh --bg-center /home/kyndt/Fond/i3fond.jpg
 
+# Bar de status, se référer à /etc/i3status.conf
 bar {
-    status_command i3status # | dzen2 -ta r -fg grey -fn lucidasans-8 -w 900 -y 1064 -x 1017 -bg black
+    status_command i3status
 }
-# exec feh --bg-scale /home/kyndt_c/Images/guilty_crown.jpg
