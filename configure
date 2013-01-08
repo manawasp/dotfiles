@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-if [ -f install.sh ]
+if [ -f configure ]
 then
 
   if [ $1 = "reset" ]
@@ -47,19 +47,19 @@ then
   mv /etc/i3status.conf ./tmp
 
   echo "Créer les liens aux endroits"
-  ln -s ./git/gitconfig /home/$USER/.gitconfig
-  ln -s ./fonts /home/$USER/.fonts
-  ln -s ./i3 /home/$USER/.i3
-  ln -s ./vim/vim/ /home/$USER/.vim
-  ln -s ./vim/vimrc /home/$USER/.vimrc
-  ln -s /home/$USER/dotfile/.Xdefaults /home/$USER/.Xdefaults
-  ln -s ./i3/i3status.conf /etc/i3status.conf
+  ln -s $HOME/dotfiles/git/gitconfig $HOME/.gitconfig
+  ln -s $HOME/dotfiles/fonts $HOME/.fonts
+  ln -s $HOME/dotfiles/i3 $HOME/.i3
+  ln -s $HOME/dotfiles/vim/vim/ $HOME/.vim
+  ln -s $HOME/dotfiles/vim/vimrc $HOME/.vimrc
+  ln -s $HOME/dotfiles/.Xdefaults $HOME/.Xdefaults
+  sudo ln -s $HOME/dotfiles/i3/i3status.conf /etc/i3status.conf
 
   echo "Actualisation .Xdefaults"
   xrdb ~/.Xdefaults;
 
   echo "Add Slim theme voir README.mk pour l'activer"
-  ln -s /home/$USER/dotfile/slim-theme-steingate/ /usr/share/slim/themes/steingate;
+  sudo ln -s $HOME/dotfiles/slim-theme-steingate/ /usr/share/slim/themes/steingate;
 
   
   echo "Il vous est conseillé de redémmarrer pour que tout les paramètres soit pris en compte"
