@@ -90,3 +90,7 @@ map <S-Left>		<ESC>:tabprevious<CR>
 map <S-Right>		<ESC>:tabnext<CR>
 map <S-M>		<ESC>:NERDTreeToggle<CR>
 map <C-X>		<ESC>:wq<CR>
+
+au BufNewFile {*.c{,++,pp}} call Epi_CHeader_Insert()
+au BufNewFile {*.h{,h}} call Epi_CHHeader_Insert()
+au BufWritePre {*.{c{,c,++,pp},h{,h}},Makefile} call UpdateHeaderDate()

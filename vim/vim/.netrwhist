@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/kyndt/tek1/wolf3d-2016-kyndt_c/v1'
+let g:netrw_dirhist_2='/exam/rendu/ex0'
+let g:netrw_dirhist_3='/home/kyndt/rush-mars-2016-paris_j/includes'
+let g:netrw_dirhist_4='/home/kyndt/rush-mars-2016-paris_j/include'
+let g:netrw_dirhist_5='/etc/xdg'

@@ -39,11 +39,11 @@ then
   mkdir ./tmp;
 
   echo "Sauvegarde les fichiers actuels"
-  mv ~/.vim ./tmp
-  mv ~/.vimrc ./tmp
-  mv ~/.i3 ./tmp
-  mv ~/.Xdefaults ./tmp
-  mv ~/.gitconfig ./tmp
+  sudo mv ~/.vim ./tmp
+  sudo mv ~/.vimrc ./tmp
+  sudo mv ~/.i3 ./tmp
+  sudo mv ~/.Xdefaults ./tmp
+  sudo mv ~/.gitconfig ./tmp
   mv /etc/i3status.conf ./tmp
 
   echo "Créer les liens aux endroits"
@@ -64,8 +64,7 @@ then
   
   echo "Il vous est conseillé de redémmarrer pour que tout les paramètres soit pris en compte"
   echo "Info reinitialiser les fichiers: ./configure reset"
-  sudo reboot;
-
+  echo "Une fois redémarrer tout sera bien pris en compte"
 else
   echo "Placé vous dans le dossier dotfile"
 fi

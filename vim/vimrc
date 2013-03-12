@@ -3,14 +3,13 @@ runtime! debian.vim
 
 " Color theme synthaxe
 syntax on
-:colorscheme xoria256
+:colorscheme rush256
 
 " Pathogen
 call pathogen#infect()
 
 filetype plugin indent on
 
-" NERDTree aptitude
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -27,26 +26,106 @@ set incsearch			" Start search while typing
 "set list			" Show special chars
 "set listchars=tab:··,trail:»
 set expandtab
-set softtabstop=8
+set softtabstop=2
 set shiftwidth=2
-set tabstop=8
+set tabstop=2
 set tabpagemax=5
 set backspace=indent,eol,start	" Allow backspace in insert mode
+
+set cursorline
+highlight CursorLine term=bold cterm=bold
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
 " auctoclosebrackets
-inoremap {<CR> {<CR>}<Left>
+"inoremap {<CR> {<CR>}<Left>
 
-" map
+
 map <S-T>	<ESC>:tabnew<CR>
 map <C-a>	<ESC>:tabprevious<CR>
 map <C-p>	<ESC>:tabnext<CR>
 map <S-M>	<ESC>:NERDTreeToggle<CR>
-map <C-X>	<ESC>:wq<CR>
+map <C-X>	<ESC>:w<CR>
+map <C-q> <ESC>:q<CR>
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
+
+
+function ProtectHeader()
+  let filename = "__" . substitute(toupper(expand("%:t")), "\\.", "_", "g") . "__"
+    execute "normal! Go" . '#ifndef '. filename . "\n". '# define ' . filename . "\n". "\n\n\n". '#endif /* !' . filename . ' */'
+    normal! kk
+endfunction
+
+" Epitech ...
+let filt = "unknown"
+
+
+let login             = "kyndt_c"
+let name              = "kyndt Clovis"
+
+function Gettr(ft)
+  let hascom = 1
+  if ft == "c" || expand("%:e") == "h" || ft == "css"
+    let cs = "/\*"
+    let cc = "\*\* "
+    let ce = "\*/"
+  elseif ft == "cpp" || ft == "java" || ft == "pov"
+    let cs = "//"
+    let cc = "// "
+    let ce = "//"
+  elseif ft == "make" || ft == "text"
+    let cs = "##"
+    let cc = "## "
+    let ce = "##"
+  else
+    let hascom = 0
+
+  endif
+  if (!hascom)
+    execute "normal! ggO" . cs . "\n". cc . "header " . "for " . "norme " . "in " . "/" . "\n". cc . "\n". cc . "Made by " . name . "\n". cc . "Login   " . "<" . login . "@epitech.eu>" . "\n". cc . "\n". cc . "Started on  " . "Mon Jan 01 00:00:00 2011 " . name . "\n" .  cc . "Last update " . "Mon Jan 01 00:00:00 2011 " . name . "\n". ce
+  endif
+
+  return hascom
+endfunction
+
+"let a = Gettr(filt)
+
+function HeaderInsert(info)
+  if (info == "c")
+    execute normal! 10"
+  endif
+"  GetComStr()
+"setl fo-=o fo-=r fo-=a fo-=c
+"setl noautoindent nosmartindent nocindent
+"if getline(10) !~ '^\s*$' "pb avec le shebang
+"execute normal! 10"
+"execute normal! o"
+"endif
+"setl fo+=o fo+=r fo+=a fo+=c
+"setl autoindent smartindent cindent
+"if expand("%:e") == h" && a:new
+"call ProtectHeader()
+"else
+"execute normal! G"
+"endif
+"dif
+endfunction
+
+"function Teste()
+"  bufReadFile 
+"endfunction
+
+map <C-n> call Teste()
+
+autocmd BufNewFile {*.c} call Gettr("c")
+" let filt = 
+"au BufNewFile,BufRead {*.c{,pp,++}} call Epi_CHeader_Insert()
+"au BufNewFile {*.h{,h}} call Epi_CHHeader_Insert()
+"au BufWritePre *.c call UpdateHeaderDate()
+
+"map <C-h> <ESC>:call Epi_CHeader_Insert()<CR>
