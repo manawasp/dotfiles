@@ -51,7 +51,7 @@ wpa_conf /etc/wpa_supplicant/iit-wifi.conf`
 * `aptitude install sudo`
 
 
-## Paramètrage environnement (Windows Manager i3)
+## Paramètrage environnement 
 
 ### Installation
 
