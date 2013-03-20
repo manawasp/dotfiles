@@ -22,16 +22,16 @@ Ne pas oublier de decocher le bureau graphique (Gnome...)
 Installer le paquet firmware-wifi (paquet non-free)
 * fichier de conf /etc/wpa_supplicant/
 > connexion a un reseau cache
- `ctrl_interface=DIR=/sbin/
-   network={
-   ssid="iit-wifi"
-   scan_ssid=1
-   key_mgmt=WPA-EAP
-   eap=PEAP
-   identity=""
-   password=""
-   phase1="peaplabel=0"
-   phase2="auth=MSCHAPV2"
+ `ctrl_interface=DIR=/sbin/  
+   network={  
+   ssid="iit-wifi"  
+   scan_ssid=1  
+   key_mgmt=WPA-EAP  
+   eap=PEAP  
+   identity=""  
+   password=""  
+   phase1="peaplabel=0"  
+   phase2="auth=MSCHAPV2"  
  }`
 
 
