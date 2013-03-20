@@ -2,69 +2,45 @@
 
 if [ -f configure ]
 then
-
-  if [ $1 = "reset" ]
-  then
-    mv ./tmp/.vim ~/.vim
-    mv ./tmp/.vimrc ~/.vimrc
-    mv ./tmp/.i3  ~/.i3
-    mv ./tmp/.Xdefaults ~/.Xdefaults
-    mv ./tmp/.gitconfig ~/.gitconfig
-    mv ./tmp/i3status.conf /etc/i3status.conf
-    echo "ReInitialisation terminer"
-    read -p 'Supprimer le dossier /tmp/ ? (y) ' -n 1 confirmation
-    if [ $confirmation = "y" ]
-    then
-      rm -r ./tmp/
-    fi
-    exit
-  fi
-  
-  echo "Ce script aussi basique qu'il soit à pour objectif de placer mes config automatiquement"
-
-  if [ -f ./tmp/ ]
-  then
-    echo "Le dossier tmp sert à sauvegarder vos anciennes configurations"
-    echo "Un dossier tmp a été trouvé si vous continuez il sera écrasé"
-    read -p 'Continuer ? (y) ' -n 1 confirmation
-    if [ $confirmation != "y" ]
-    then
-      echo "\nInstall aborded"
-      exit
-    fi
-    echo "\nSuppression du dossier"
-    rm -r ./tmp/
-  fi
-
-  mkdir ./tmp;
+  home = $HOME
+  sep = "\n---------------------------\n"
+  echo "BEGIN"
+  echo $sep;
 
   echo "Sauvegarde les fichiers actuels"
-  sudo mv ~/.vim ./tmp
-  sudo mv ~/.vimrc ./tmp
-  sudo mv ~/.i3 ./tmp
-  sudo mv ~/.Xdefaults ./tmp
-  sudo mv ~/.gitconfig ./tmp
-  mv /etc/i3status.conf ./tmp
+  rm $home/.vim -rf
+  rm $home/.vimrc -f
+  rm $home/.i3 -rf
+  rm $home/.Xdefaults -f
+  rm $home/.gitconfig -f
+  rm $home/.muttrc -f
+  rm $home/.xinitrc -f
+  sudo rm $home/etc/i3status.conf -f
+
+  echo $sep;
 
   echo "Créer les liens aux endroits"
-  ln -s $HOME/dotfiles/git/gitconfig $HOME/.gitconfig
-  ln -s $HOME/dotfiles/fonts $HOME/.fonts
-  ln -s $HOME/dotfiles/i3 $HOME/.i3
-  ln -s $HOME/dotfiles/vim/vim/ $HOME/.vim
-  ln -s $HOME/dotfiles/vim/vimrc $HOME/.vimrc
-  ln -s $HOME/dotfiles/.Xdefaults $HOME/.Xdefaults
-  sudo ln -s $HOME/dotfiles/i3/i3status.conf /etc/i3status.conf
+  ln -s $home/dotfiles/git/gitconfig $home/.gitconfig
+  ln -s $home/dotfiles/fonts $home/.fonts
+  ln -s $home/dotfiles/i3 $home/.i3
+  ln -s $home/dotfiles/vim/vim/ $home/.vim
+  ln -s $home/dotfiles/vim/vimrc $home/.vimrc
+  ln -s $home/dotfiles/.Xdefaults $home/.Xdefaults
+  ln -s $home/dotfiles/.xinitrc $home/.xinitrc
+  cp $home/dotfiles/.muttrc $home/.muttrc
+  sudo ln -s $home/dotfiles/i3/i3status.conf /etc/i3status.conf
+
+  echo $sep;
 
   echo "Actualisation .Xdefaults"
-  xrdb ~/.Xdefaults;
+  xrdb $home/.Xdefaults;
+
+  echo $sep;
 
   echo "Add Slim theme voir README.mk pour l'activer"
-  sudo ln -s $HOME/dotfiles/slim-theme-steingate/ /usr/share/slim/themes/steingate;
+  sudo ln -s $home/dotfiles/slim-theme-steingate/ /usr/share/slim/themes/steingate;
 
-  
+  echo $sep;
+
   echo "Il vous est conseillé de redémmarrer pour que tout les paramètres soit pris en compte"
-  echo "Info reinitialiser les fichiers: ./configure reset"
-  echo "Une fois redémarrer tout sera bien pris en compte"
-else
-  echo "Placé vous dans le dossier dotfile"
 fi

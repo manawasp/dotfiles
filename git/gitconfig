@@ -1,5 +1,5 @@
 [user]
-	name = Kyndt Clovis
+	      name = Kyndt Clovis
         email = clovis.kyndt@epitech.eu
 
 [color "branch"]
@@ -10,7 +10,7 @@
 [color "diff"]
         meta = yellow bold
         frag = magenta bold
-        old = red bold      
+        old = red bold
         new = green bold
 
 [color "status"]

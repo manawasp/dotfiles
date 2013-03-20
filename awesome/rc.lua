@@ -50,7 +50,7 @@ couth.CONFIG.ALSA_CONTROLS = {
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/kyndt/.config/awesome/themes/zenburn/theme.lua")
+beautiful.init("/home/kyndt/.config/awesome/themes/blueicecream/theme.lua")
 browser = "google-chrome"
 music = "urxvt -name ncmpcpp -e ncmpcpp"
 
