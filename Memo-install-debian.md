@@ -22,7 +22,7 @@ Ne pas oublier de decocher le bureau graphique (Gnome...)
 Installer le paquet firmware-wifi (paquet non-free)
 * fichier de conf /etc/wpa_supplicant/
 connexion a un reseau cache
->  `ctrl_interface=DIR=/sbin/  
+>  ctrl_interface=DIR=/sbin/  
    network={  
    ssid="iit-wifi"  
    scan_ssid=1  
@@ -32,7 +32,7 @@ connexion a un reseau cache
    password=""  
    phase1="peaplabel=0"  
    phase2="auth=MSCHAPV2"  
- }  `
+ }  
 
 
 * Ajouter la configuration à /etc/network/interfaces
