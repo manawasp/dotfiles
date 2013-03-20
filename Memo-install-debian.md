@@ -95,12 +95,3 @@ Aller sur adobe et télécharger/installer le plugin adobe flash player.
 * rxvt-unicode-256colors
 * mutt
 
-
-### Installation Annexe +
-
-* Configuration de vim, rxterm-unicode-256colors, powerline : vim/README.rd
-* Configuration de i3 : i3/README.rd
-* Configuration de slim : slim-theme-steingate/README.rd
-
-
-
