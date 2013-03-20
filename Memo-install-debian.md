@@ -7,9 +7,9 @@
 
 > Environnement Graphique
 
-[Tilling Window Manager](http://en.wikipedia.org/wiki/Tiling_window_manager)
-[Wiki Awesome](http://awesome.naquadah.org/wiki/Main_Page)
-[Wiki i3](3wm.org/docs/userguide.html)
+[Tilling Window Manager](http://en.wikipedia.org/wiki/Tiling_window_manager)  
+[Wiki Awesome](http://awesome.naquadah.org/wiki/Main_Page)  
+[Wiki i3](3wm.org/docs/userguide.html)  
 
 
 ## Installation Debian
