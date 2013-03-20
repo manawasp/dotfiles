@@ -32,7 +32,7 @@ connexion a un reseau cache
    password=""  
    phase1="peaplabel=0"  
    phase2="auth=MSCHAPV2"  
- }`
+ }  `
 
 
 * Ajouter la configuration à /etc/network/interfaces
