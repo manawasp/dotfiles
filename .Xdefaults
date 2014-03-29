@@ -75,12 +75,21 @@ URxvt*termName:         xterm-256color
 !URxvt*boldFont:         xft:Monaco for Powerline:bold:size=8
 !URxvt*italicFont:       xft:Monaco for Powerline:italic:size=8
 !URxvt*boldItalicFont:   xft:Monaco for Powerline:bold:italic:size=8
+<<<<<<< HEAD
 !xterm*font:             -*-dina-medium-r-*-*-6-*-*-*-*-*-*-*
 URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=10
 URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=10
 URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=10
 URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=10
 URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=10
+=======
+!URxvt*font:             -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=7
+URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=7
+URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=7
+URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=7
+URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=7
+>>>>>>> edbaf9ded5a31502de4d466c91e535a3127f57e0
 URxvt*utf8:             2
 URxvt*dynamicColors:    true
 URxvt*saveLines:        512

@@ -57,6 +57,10 @@ wpa_conf /etc/wpa_supplicant/iit-wifi.conf`
 
 * `aptitude install i3 awesome xorg slim`
 
+Si slim ne se lance pas au demarrage :  
+* Xorg -configure  
+* cp /root/xorg.conf.new /etc/X11/xorg.conf  
+
 ### Le son & Beep
 
 * `aptitude install alsa`

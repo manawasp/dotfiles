@@ -4,6 +4,7 @@ runtime! debian.vim
 " Color theme synthaxe
 syntax on
 :colorscheme rush256
+" rush256
 
 " Pathogen
 call pathogen#infect()
