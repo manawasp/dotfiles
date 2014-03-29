@@ -1,4 +1,3 @@
-
 DEFAULT=SESSION=awesome
 
 case $1 in

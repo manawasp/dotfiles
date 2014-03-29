@@ -44,8 +44,8 @@
 xterm*background:       black
 xterm*geometry:         80x25
 xterm*termName:         xterm-256color
-xterm*faceName:         DejaVu Sans Mono for Powerline:Book:pixelsize=12
-! xterm*font:             -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xterm*faceName:         DejaVu Sans Mono for Powerline:Book:pixelsize=7
+xterm*font:             -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
 ! xterm*font:             xft:DejaVu Sans Mono for Powerline:bold:size=12
 ! xterm*imFont:           xft:DejaVu Sans Mono for Powerline:bold:size=12
 ! xterm*boldFont:         xft:DejaVu Sans Mono for Powerline:bold:size=12
@@ -75,12 +75,12 @@ URxvt*termName:         xterm-256color
 !URxvt*boldFont:         xft:Monaco for Powerline:bold:size=8
 !URxvt*italicFont:       xft:Monaco for Powerline:italic:size=8
 !URxvt*boldItalicFont:   xft:Monaco for Powerline:bold:italic:size=8
-!xterm*font:             -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
-URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=10
-URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=10
-URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=10
-URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=10
-URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=10
+!URxvt*font:             -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
+URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=7
+URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=7
+URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=7
+URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=7
+URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=7
 URxvt*utf8:             2
 URxvt*dynamicColors:    true
 URxvt*saveLines:        512

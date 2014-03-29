@@ -1,7 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/kyndt/tek1/wolf3d-2016-kyndt_c/v1'
-let g:netrw_dirhist_2='/exam/rendu/ex0'
-let g:netrw_dirhist_3='/home/kyndt/rush-mars-2016-paris_j/includes'
-let g:netrw_dirhist_4='/home/kyndt/rush-mars-2016-paris_j/include'
-let g:netrw_dirhist_5='/etc/xdg'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/kyndt/C/rush2-2016-louf_a/src/ncurses'
+let g:netrw_dirhist_2='/home/kyndt/C++/RISK/CLASS'
+let g:netrw_dirhist_3='/home/kyndt/C++/RISK'
+let g:netrw_dirhist_4='/home/kyndt/C/myirc-2016-kyndt_c/src_server'
+let g:netrw_dirhist_5='/etc/rc0.d'
+let g:netrw_dirhist_6='/home/kyndt/Rails/api/db/migrate'
+let g:netrw_dirhist_7='/home/kyndt/Rails/api_rails/db'
+let g:netrw_dirhist_8='/home/kyndt/Rails/darkvadorapi/app'
+let g:netrw_dirhist_9='/home/kyndt/Rails/darkvadorapi/app/helpers'
