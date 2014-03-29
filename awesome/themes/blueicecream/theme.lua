@@ -14,7 +14,7 @@ white = "#ffffff"
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "awsetbg /home/kyndt/.config/awesome/themes/blueicecream/background.png" }
+theme.wallpaper_cmd = { "awsetbg /home/manawasp/.config/awesome/themes/blueicecream/background.png" }
 -- }}}
 
 -- {{{ Styles
@@ -114,7 +114,7 @@ theme.menu_height = "18"
 theme.menu_width  = "160"
 -- }}}
 
-blue_dir = "/home/kyndt/.config/awesome/themes/blueicecream/icons_blue"
+blue_dir = "/home/manawasp/.config/awesome/themes/blueicecream/icons_blue"
 -- {{{ Icons
 -- {{{ Taglist
 theme.taglist_squares_sel   = blue_dir .. "/squarefz.png"

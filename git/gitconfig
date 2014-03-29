@@ -22,3 +22,5 @@
 	co = checkout
 [core]
 	editor = vim -w
+[push]
+	default = matching

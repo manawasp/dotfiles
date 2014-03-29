@@ -50,7 +50,7 @@ couth.CONFIG.ALSA_CONTROLS = {
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/kyndt/.config/awesome/themes/blueicecream/theme.lua")
+beautiful.init("/home/manawasp/.config/awesome/themes/blueicecream/theme.lua")
 browser = "google-chrome"
 music = "urxvt -name ncmpcpp -e ncmpcpp"
 
@@ -469,7 +469,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
     awful.key({ modkey, "Shift" }, "w",     function () awful.util.spawn(browser)     end),
-    awful.key({ modkey,}, "l",     function () awful.util.spawn("i3lock -i /home/kyndt/Fond/lock.png")     end),
+    awful.key({ modkey,}, "l",     function () awful.util.spawn("i3lock -i /home/manawasp/Fond/lock.png")     end),
 
     --awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
