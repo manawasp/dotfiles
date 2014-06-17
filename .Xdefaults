@@ -44,14 +44,14 @@
 xterm*background:       black
 xterm*geometry:         80x25
 xterm*termName:         xterm-256color
-xterm*faceName:         DejaVu Sans Mono for Powerline:Book:pixelsize=10
-! xterm*font:             -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xterm*faceName:         DejaVu Sans Mono for Powerline:Book:pixelsize=12
+xterm*font:             -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
 ! xterm*font:             xft:DejaVu Sans Mono for Powerline:bold:size=12
 ! xterm*imFont:           xft:DejaVu Sans Mono for Powerline:bold:size=12
 ! xterm*boldFont:         xft:DejaVu Sans Mono for Powerline:bold:size=12
 ! xterm*italicFont:       xft:DejaVu Sans Mono for Powerline:size=12
 ! xterm*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=12
-xterm*utf8:             2
+!!xterm*utf8:             2
 xterm*dynamicColors:    true
 xterm*saveLines:        512
 xterm*scrollTtyKeypress:true
@@ -75,21 +75,12 @@ URxvt*termName:         xterm-256color
 !URxvt*boldFont:         xft:Monaco for Powerline:bold:size=8
 !URxvt*italicFont:       xft:Monaco for Powerline:italic:size=8
 !URxvt*boldItalicFont:   xft:Monaco for Powerline:bold:italic:size=8
-<<<<<<< HEAD
 !xterm*font:             -*-dina-medium-r-*-*-6-*-*-*-*-*-*-*
-URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=10
-URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=10
-URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=10
-URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=10
-URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=10
-=======
-!URxvt*font:             -*-dina-medium-r-*-*-10-*-*-*-*-*-*-*
-URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=7
-URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=7
-URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=7
-URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=7
-URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=7
->>>>>>> edbaf9ded5a31502de4d466c91e535a3127f57e0
+URxvt*font:             xft:DejaVu Sans Mono for Powerline:regular:size=11
+URxvt*imFont:           xft:DejaVu Sans Mono for Powerline:regular:size=11
+URxvt*boldFont:         xft:DejaVu Sans Mono for Powerline:regular:size=11
+URxvt*italicFont:       xft:DejaVu Sans Mono for Powerline:size=11
+URxvt*boldItalicFont:   xft:DejaVu Sans Mono for Powerline:italic:size=11
 URxvt*utf8:             2
 URxvt*dynamicColors:    true
 URxvt*saveLines:        512
@@ -102,3 +93,7 @@ URxvt*multiScroll:      true
 URxvt*toolBar:          false
 URxvt*metaSendsEscape:  true
 URxvt*eightBitInput:    false
+
+xterm*utf8:               1
+xterm*faceNameDoublesize: TakaoExMincho
+xterm*faceSize:           10
