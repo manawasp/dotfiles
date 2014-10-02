@@ -481,12 +481,13 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
-    awful.key({ }, "XF86MonBrightnessDown",   function () couth.notifier:notify( couth.alsa:setVolume('Master','3dB-')) end),
-    awful.key({ }, "XF86MonBrightnessUp",   function () couth.notifier:notify( couth.alsa:setVolume('Master','3dB+')) end),
-    awful.key({ }, "XF86AudioMicMute",          function () couth.notifier:notify( couth.alsa:setVolume('Master','toggle')) end),
-    awful.key({ "Control" }, "XF86MonBrightnessDown",    function () couth.notifier:notify( couth.alsa:setVolume('Headphone','3dB-')) end),
-    awful.key({ "Control" }, "XF86MonBrightnessUp",    function () couth.notifier:notify( couth.alsa:setVolume('Headphone','3dB+')) end),
-    awful.key({ "Control" }, "XF86AudioMicMute",           function () couth.notifier:notify( couth.alsa:setVolume('Headphone','toggle')) end),
+    awful.key({ modkey,}, "l",   function () couth.notifier:notify( couth.alsa:setVolume('Master','3dB-')) end),
+    awful.key({ }, "XF86LowerVolume",   function () couth.notifier:notify( couth.alsa:setVolume('Master','3dB-')) end),
+    awful.key({ }, "XF86RaiseVolume",   function () couth.notifier:notify( couth.alsa:setVolume('Master','3dB+')) end),
+    awful.key({ }, "XF86AudioMute",          function () couth.notifier:notify( couth.alsa:setVolume('Master','toggle')) end),
+    awful.key({ "Control" }, "XF86LowerVolume",    function () couth.notifier:notify( couth.alsa:setVolume('Headphone','3dB-')) end),
+    awful.key({ "Control" }, "XF86RaiseVolume",    function () couth.notifier:notify( couth.alsa:setVolume('Headphone','3dB+')) end),
+    awful.key({ "Control" }, "XF86AudioMute",           function () couth.notifier:notify( couth.alsa:setVolume('Headphone','toggle')) end),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
