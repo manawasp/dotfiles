@@ -1,5 +1,6 @@
 DEFAULT=SESSION=awesome
 
+xrdb $HOME/.Xdefault
 exec awesome
 
 case $1 in
