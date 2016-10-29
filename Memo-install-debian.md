@@ -55,15 +55,11 @@ wpa_conf /etc/wpa_supplicant/iit-wifi.conf`
 
 ### Installation
 
-* `aptitude install i3 awesome xorg slim`
-
-Si slim ne se lance pas au demarrage :  
-* Xorg -configure  
-* cp /root/xorg.conf.new /etc/X11/xorg.conf  
+* `aptitude install xorg awesome slim`
 
 ### Le son & Beep
 
-* `aptitude install alsa`
+* `aptitude install alsa-utils alsa-tools alsamixergui`
 
 Lancer `sudo alsamixer`, unmute les hauts-parleurs et mute le beep.
 
@@ -83,19 +79,13 @@ Aller sur adobe et télécharger/installer le plugin adobe flash player.
 * xclip
 * feh : fond d'ecran
 * vim/emacs : editeur de texte
-* openoffice.org : openoffice
 * tree : une arborescence
 * valgrind
 * gdb
 * clang : compilateur c & c++
-* ruby
-* mpd
-* ncpmcpp
-* svn
-* mysql
-* php
 * ghc-ghci : Haskell
 * ocaml
 * rxvt-unicode-256colors
-* mutt
+* htop
+* python3.x
 
