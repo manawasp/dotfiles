@@ -130,15 +130,15 @@ mytextclock = lain.widgets.abase({
 lain.widgets.calendar:attach(mytextclock, { font_size = 10 })
 
 -- Weather
-weathericon = wibox.widget.imagebox(beautiful.widget_weather)
-myweather = lain.widgets.weather({
-    city_id = 123456, -- placeholder
-    settings = function()
-        descr = weather_now["weather"][1]["description"]:lower()
-        units = math.floor(weather_now["main"]["temp"])
-        widget:set_markup(markup("#eca4c4", descr .. " @ " .. units .. "°C "))
-    end
-})
+--weathericon = wibox.widget.imagebox(beautiful.widget_weather)
+--myweather = lain.widgets.weather({
+--    city_id = 123456, -- placeholder
+--    settings = function()
+--        descr = weather_now["weather"][1]["description"]:lower()
+--        units = math.floor(weather_now["main"]["temp"])
+--       widget:set_markup(markup("#eca4c4", descr .. " @ " .. units .. "°C "))
+--    end
+--})
 
 -- / fs
 fsicon = wibox.widget.imagebox(beautiful.widget_fs)
@@ -219,11 +219,11 @@ netupicon = wibox.widget.imagebox(beautiful.widget_netup)
 --netupicon.align = "middle"
 netupinfo = lain.widgets.net({
     settings = function()
-        if iface ~= "network off" and
-           string.match(myweather._layout.text, "N/A")
-        then
-            myweather.update()
-        end
+       -- if iface ~= "network off" and
+          -- string.match(myweather._layout.text, "N/A")
+      --  then
+          --  myweather.update()
+      --  end
 
         widget:set_markup(markup("#e54c62", net_now.sent .. " "))
         netdowninfo:set_markup(markup("#87af5f", net_now.received .. " "))
@@ -367,8 +367,8 @@ for s = 1, screen.count() do
     right_layout:add(cpuwidget)
     right_layout:add(fsicon)
     right_layout:add(fswidget)
-    right_layout:add(weathericon)
-    right_layout:add(myweather)
+ --   right_layout:add(weathericon)
+ --   right_layout:add(myweather)
     right_layout:add(tempicon)
     right_layout:add(tempwidget)
     right_layout:add(baticon)
@@ -508,7 +508,7 @@ globalkeys = awful.util.table.join(
     -- Widgets popups
     awful.key({ altkey,           }, "c",      function () lain.widgets.calendar:show(7) end),
     awful.key({ altkey,           }, "h",      function () fswidget.show(7) end),
-    awful.key({ altkey,           }, "w",      function () myweather.show(7) end),
+   -- awful.key({ altkey,           }, "w",      function () myweather.show(7) end),
 
     -- ALSA volume control
     awful.key({ altkey }, "Up",
