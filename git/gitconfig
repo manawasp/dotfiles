@@ -28,7 +28,7 @@
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 [alias]
-	co = checkout
+  co = checkout
   st = status
   ci = commit
   br = branch
@@ -41,7 +41,7 @@
   ls = ls-files
 
 [core]
-	editor = nano
+  editor = vim
 
 [push]
-	default = simple
+  default = simple
