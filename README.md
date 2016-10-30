@@ -12,24 +12,14 @@ Contient les polices patchées pour la vim-powerline (useless depuis l'utilisati
 
 Fichier de conf pour git
 
-### i3
-
-Config d'i3, fond d'ecran, raccourci son, etc...
-Config d'i3bar, couleur & volume sound
-
 ### Awesome
 
 Contient :
-* rc.luatheme
-* icebluecream, une version adaptee a mon gout du theme moss
-
-Installation ulterieur couth/npd/ncmpcpp
+* Theme `multicolor` from [copycat-killer/awesome-copycats](https://github.com/copycat-killer/awesome-copycats)
 
 ### slim
 
 Un theme slim
-Slim.conf :
-  `55|  sessions            awesome,i3`
 
 ### Vim
 
