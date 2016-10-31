@@ -7,9 +7,8 @@
 
 > Environnement Graphique
 
-[Tilling Window Manager](http://en.wikipedia.org/wiki/Tiling_window_manager)  
-[Wiki Awesome](http://awesome.naquadah.org/wiki/Main_Page)  
-[Wiki i3](3wm.org/docs/userguide.html)  
+[Tilling Window Manager](http://en.wikipedia.org/wiki/Tiling_window_manager)
+[Wiki Awesome](http://awesome.naquadah.org/wiki/Main_Page)
 
 
 ## Installation Debian
@@ -21,28 +20,7 @@ Ne pas oublier de decocher le bureau graphique (Gnome...)
 
 Installer le paquet firmware-wifi (paquet non-free)
 * fichier de conf /etc/wpa_supplicant/
-connexion a un reseau cache
->  ctrl_interface=DIR=/sbin/  
-   network={  
-   ssid="iit-wifi"  
-   scan_ssid=1  
-   key_mgmt=WPA-EAP  
-   eap=PEAP  
-   identity=""  
-   password=""  
-   phase1="peaplabel=0"  
-   phase2="auth=MSCHAPV2"  
- }  
-
-
 * Ajouter la configuration à /etc/network/interfaces
-`iface iit-wifi inet dhcp
-wpa_conf /etc/wpa_supplicant/iit-wifi.conf`
-
-* `ifup wlan0='itt-wifi'`
-
-> mount, su, dpkg -i
-
 
 ### Paramètrage & upgrade
 
@@ -51,7 +29,7 @@ wpa_conf /etc/wpa_supplicant/iit-wifi.conf`
 * `aptitude install sudo`
 
 
-## Paramètrage environnement 
+## Paramètrage environnement
 
 ### Installation
 
@@ -59,7 +37,7 @@ wpa_conf /etc/wpa_supplicant/iit-wifi.conf`
 
 ### Le son & Beep
 
-* `aptitude install alsa-utils alsa-tools alsamixergui`
+* `aptitude install alsa-utils alsa-tools alsamixergui pulseaudio`
 
 Lancer `sudo alsamixer`, unmute les hauts-parleurs et mute le beep.
 
