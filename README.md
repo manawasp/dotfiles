@@ -17,6 +17,7 @@
 - [vscode](https://code.visualstudio.com/insiders/): code editor redefined and optimized for building and debugging modern web and cloud applications
 - [azuredatastudio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio): light-weight tool for managing SQL Server, Azure SQL Database, PostgreSQL
 - [spotify](https://www.spotify.com/fr/download/linux/): audio streaming and media services provider
+- [pexels.com](https://www.pexels.com/): free stock photos, royalty free images & videos
 
 ### Programming
 
