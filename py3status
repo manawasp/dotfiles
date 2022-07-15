@@ -1,0 +1,9 @@
+networkmanager {
+  format_device = "[\?if=general_connection [\?soft ][\?color=ap_signal {ap_ssid} {ap_signal}%][\?soft ]]"
+}
+
+order += "backlight"
+order += "networkmanager"
+order += "apt_updates"
+order += "disk /"
+order += "time"
