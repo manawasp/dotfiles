@@ -4,7 +4,7 @@
 
 ### System
 
-- [debian](https://www.debian.org/devel/debian-installer/): Linux distribution composed of free and open-source software
+- [debian](https://www.debian.org/devel/debian-installer/): linux distribution composed of free and open-source software
 - [i3](https://i3wm.org/): dynamic tiling window manager
 - [LightDM](https://wiki.archlinux.org/title/LightDM): cross-desktop display manager
 - [py3status](https://py3status.readthedocs.io/en/latest/): extensible i3status wrapper written in Python
@@ -15,6 +15,7 @@
 - [zsh](https://www.zsh.org/): shell designed for interactive use, although it is also a powerful scripting language
 - [nvim](https://neovim.io/): hyperextensible Vim-based text editor
 - [vscode](https://code.visualstudio.com/insiders/): code editor redefined and optimized for building and debugging modern web and cloud applications
+- [azuredatastudio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio): light-weight tool for managing SQL Server, Azure SQL Database, PostgreSQL
 - [spotify](https://www.spotify.com/fr/download/linux/): audio streaming and media services provider
 
 ### Programming
@@ -36,9 +37,9 @@ $ sudo apt install \
     tree cloc xclip git ssh
 ```
 
-Follow official website to setup `zsh`, `oh-my-zsh`, `nvim`, `vscode`, `spotify`, `docker`, `go`, `nvm` 
+Follow official website to setup `zsh`, `oh-my-zsh`, `nvim`, `vscode`, `azuredatastudio`, `spotify`, `docker`, `go`, `nvm` 
 
-Addiontals install:
+Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer npm install)
 - [Powerline fonts](https://github.com/powerline/fonts): pre-patched and adjusted fonts for usage with the Powerline statusline plugin (prefer manual install)
 - [Noto emoji](https://github.com/googlefonts/noto-emoji): Color and Black-and-White Noto emoji fonts, and tools for working with them
@@ -59,7 +60,7 @@ $ mkdir -p $HOME/.config/nvim && ln -s $HOME/.dotfiles/init.vim $HOME/.config/nv
 $ sudo ln -s /home/manawasp/.dotfiles/images/inlog-background.png /etc/lightdm/inlog-background.png
 ```
 
-### Zsh
+### zsh
 
 See `cat ~/.zshrc` header to complete zsh plugins install
 
@@ -67,4 +68,21 @@ See `cat ~/.zshrc` header to complete zsh plugins install
 
 See [vim-plug](https://github.com/junegunn/vim-plug) to activate plugins support and run `:PlugInstall` to configure plugins
 
+### vscode
+
+```sh
+# The code editor must have been opened before
+# Also I am using the insiders version
+$ cd $HOME/.dotfiles/.vscode/ && cat extensions.list | grep -v '^#' | xargs -L1 code-insiders --install-extension
+$ ln -s $HOME/.dotfiles/.vscode-insiders/settings.json $HOME/.config/Code\ -\ Insiders/User/settings.json
+```
+
+### LightDM
+
+Update `/etc/lightdm/lightdm-gtk-greeter.conf`:
+
+```conf
+[greeter]
+background=/etc/lightdm/inlog-background.png
+```
 

@@ -1,0 +1,52 @@
+# Vue
+antfu.iconify
+antfu.slidev
+antfu.unocss
+antfu.vite
+antfu.goto-alias
+csstools.postcss
+formulahendry.auto-close-tag
+lokalise.i18n-ally
+jock.svg
+
+# Go
+golang.Go
+zxh404.vscode-proto3
+
+# Python
+ms-python.python
+
+# Rust
+rust-lang.rust-analyzer
+
+# Flutter
+Dart-Code.flutter
+Dart-Code.dart-code
+
+# Programming misc
+ms-azuretools.vscode-docker
+yzhang.markdown-all-in-one
+
+# themes & icons
+dracula-theme.theme-dracula
+antfu.icons-carbon
+antfu.theme-vitesse
+file-icons.file-icons
+
+# life savers!
+alefragnani.project-manager
+wayou.vscode-todo-highlight
+dbaeumer.vscode-eslint
+Vue.volar
+usernamehw.errorlens
+streetsidesoftware.code-spell-checker
+
+# misc
+adpyke.codesnap
+eamodio.gitlens
+EditorConfig.EditorConfig
+naumovs.color-highlight
+richie5um2.vscode-sort-json
+unional.vscode-sort-package-json
+voorjaar.windicss-intellisense
+WakaTime.vscode-wakatime
