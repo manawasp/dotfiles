@@ -34,11 +34,12 @@ $ sudo apt install \
     i3 py3status feh \
     lightdm lightdm-webkit2-greeter \
     rxvt-unicode \
+    neovim \
     pavucontrol imagemagick vlc qiv arandr \
     tree cloc xclip git ssh
 ```
 
-Follow official website to setup `zsh`, `oh-my-zsh`, `nvim`, `vscode`, `azuredatastudio`, `spotify`, `docker`, `go`, `nvm` 
+Follow official website to setup `zsh`, `oh-my-zsh`, `vscode`, `azuredatastudio`, `spotify`, `docker`, `go`, `nvm` 
 
 Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer npm install)
@@ -75,7 +76,7 @@ See [vim-plug](https://github.com/junegunn/vim-plug) to activate plugins support
 # The code editor must have been opened before
 # Also I am using the insiders version
 $ cd $HOME/.dotfiles/.vscode/ && cat extensions.list | grep -v '^#' | xargs -L1 code-insiders --install-extension
-$ ln -s $HOME/.dotfiles/.vscode-insiders/settings.json $HOME/.config/Code\ -\ Insiders/User/settings.json
+$ ln -s $HOME/.dotfiles/.vscode/settings.json $HOME/.config/Code\ -\ Insiders/User/settings.json
 ```
 
 ### LightDM

@@ -4,6 +4,8 @@
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.find.addExtraSpaceOnTop": false,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": "false,
   "editor.fontFamily": "Input Mono, Fira Code, monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.fontSize": 13.5,
@@ -28,20 +30,20 @@
   "window.nativeTabs": true, // this is great, macOS only
   "window.titleBarStyle": "custom",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Vitesse Dark",
+  "workbench.colorTheme": "Dracula",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabCloseButton": "right",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "file-icons",
   "workbench.list.smoothScrolling": true,
-  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.preferredDarkColorTheme": "Dracula",
   "workbench.preferredLightColorTheme": "Vitesse Light",
   "workbench.productIconTheme": "icons-carbon",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
@@ -50,6 +52,7 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
+  "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -93,6 +96,11 @@
     "Grammarly",
     "eslint"
   ],
+  // Go config:
+  "go.gorout": "$HOME/go",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "go.gopath": "$HOME/gocode",
   // ESLint config: https://github.com/antfu/eslint-config
   "eslint.codeAction.showDocumentation": {
     "enable": true
@@ -110,12 +118,7 @@
     "jsonc",
     "json5"
   ],
-  "github.copilot.enable": {
-    "*": true,
-    "markdown": true,
-    "plaintext": false,
-    "yaml": false
-  },
+  "python.formatting.provider": "black",
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "css.lint.hexColorLength": "ignore",
@@ -184,6 +187,9 @@
   "prettier.printWidth": 200,
   "prettier.semi": false,
   "prettier.singleQuote": true,
+  "codesnap.containerPadding": ".7em",
+  "codesnap.showLineNumbers": false,
+  "codesnap.showWindowControls": false,
 
   // File Nesting
   // this might not be up to date with the repo, please check yourself
