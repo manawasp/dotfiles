@@ -56,7 +56,7 @@ $ rm -f $HOME/.zshrc && ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 $ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 $ rm -f $HOME/.config/i3/config && ln -s $HOME/.dotfiles/i3config $HOME/.config/i3/config
 $ mkdir -p $HOME/.config/i3status && ln -s $HOME/.dotfiles/py3status $HOME/.config/i3status/config
-$ ln -s $HOME/.dotfiles/images/background.jpg $HOME/.config/i3/background.png
+$ ln -s $HOME/.dotfiles/images/background.jpg $HOME/.config/i3/background.jpg
 $ ln -s $HOME/.dotfiles/images/lock-background.png $HOME/.config/i3/lock-background.png
 $ mkdir -p $HOME/.config/nvim && ln -s $HOME/.dotfiles/init.vim $HOME/.config/nvim/init.vim 
 $ sudo ln -s /home/manawasp/.dotfiles/images/inlog-background.png /etc/lightdm/inlog-background.png

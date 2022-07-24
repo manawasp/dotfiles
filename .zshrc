@@ -34,6 +34,7 @@ alias gitup='cd "$(git rev-parse --show-toplevel)"'
 export EDITOR=nvim
 
 alias vim=nvim
+alias ssho="ssh-add ~/.ssh/id_ed25519"
 
 # -------------------------------- #
 # Node
