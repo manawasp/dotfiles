@@ -1,5 +1,3 @@
-
-
 {
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": true,
@@ -81,7 +79,6 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
-
   // Extension configs
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
@@ -188,7 +185,6 @@
   "codesnap.containerPadding": ".7em",
   "codesnap.showLineNumbers": false,
   "codesnap.showWindowControls": false,
-
   // File Nesting
   // this might not be up to date with the repo, please check yourself
   // updated 2022-03-10 06:10

@@ -20,8 +20,8 @@
   new = green bold
 
 [color "status"]
-  added = green
-  changed = yellow
+  added = yellow
+  changed = green
   untracked = cyan
 
 [alias]
@@ -69,7 +69,7 @@
   
 [tag]
   # Sort tags as version numbers whenever applicable, so 1.10.2 is AFTER 1.2.0.
-  sort = version:refname
+  sort = -version:refname
 
 [versionsort]
   prereleaseSuffix = -pre
