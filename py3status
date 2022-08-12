@@ -2,8 +2,19 @@ networkmanager {
   format_device = "[\?if=general_connection [\?soft ][\?color=ap_signal {ap_ssid} {ap_signal}%][\?soft ]]"
 }
 
+memory {
+        format = "%used"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%H:%M"
+}
+
 order += "backlight"
 order += "networkmanager"
 order += "apt_updates"
 order += "disk /"
-order += "time"
+order += "memory"
+order += "tztime local"
