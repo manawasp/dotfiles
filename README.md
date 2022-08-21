@@ -31,15 +31,14 @@
 ```sh
 $ sudo apt update && sudo apt upgrade
 $ sudo apt install \
-    i3 py3status feh \
-    lightdm lightdm-webkit2-greeter \
-    rxvt-unicode \
+    gcc curl tree cloc xclip git ssh \
+    i3 py3status feh lightdm \
+    rxvt-unicode zsh \
     neovim \
-    pavucontrol imagemagick vlc qiv arandr \
-    tree cloc xclip git ssh
+    pavucontrol imagemagick vlc qiv arandr
 ```
 
-Follow official website to setup `zsh`, `oh-my-zsh`, `vscode`, `azuredatastudio`, `spotify`, `docker`, `go`, `nvm` 
+Follow official website to setup `zsh`, `oh-my-zsh`, `vscode`, `azuredatastudio`, `spotify`, `docker`, `go`, `nvm`
 
 Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer npm install)
@@ -58,17 +57,17 @@ $ rm -f $HOME/.config/i3/config && ln -s $HOME/.dotfiles/i3config $HOME/.config/
 $ mkdir -p $HOME/.config/i3status && ln -s $HOME/.dotfiles/py3status $HOME/.config/i3status/config
 $ ln -s $HOME/.dotfiles/images/background.jpg $HOME/.config/i3/background.jpg
 $ ln -s $HOME/.dotfiles/images/lock-background.png $HOME/.config/i3/lock-background.png
-$ mkdir -p $HOME/.config/nvim && ln -s $HOME/.dotfiles/init.vim $HOME/.config/nvim/init.vim 
+$ mkdir -p $HOME/.config/nvim && ln -s $HOME/.dotfiles/init.vim $HOME/.config/nvim/init.vim
 $ sudo ln -s /home/manawasp/.dotfiles/images/inlog-background.png /etc/lightdm/inlog-background.png
 ```
 
-### zsh
+### zsh plugins
 
 See `cat ~/.zshrc` header to complete zsh plugins install
 
 ### nvim
 
-See [vim-plug](https://github.com/junegunn/vim-plug) to activate plugins support and run `:PlugInstall` to configure plugins
+See [vim-plug](https://github.com/junegunn/vim-plug#neovim) to activate plugins support and run `:PlugInstall` to configure plugins
 
 ### vscode
 
@@ -78,6 +77,17 @@ See [vim-plug](https://github.com/junegunn/vim-plug) to activate plugins support
 $ cd $HOME/.dotfiles/.vscode/ && cat extensions.list | grep -v '^#' | xargs -L1 code-insiders --install-extension
 $ ln -s $HOME/.dotfiles/.vscode/settings.json $HOME/.config/Code\ -\ Insiders/User/settings.json
 ```
+
+### Docker
+
+Fix docker permission denied
+
+```
+$ sudo groupadd docker
+$ sudo usermod -aG docker ${USER}
+```
+
+_note: will need to reboot_
 
 ### LightDM
 

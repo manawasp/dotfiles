@@ -95,7 +95,6 @@
   // Go config:
   "go.formatTool": "goimports",
   "go.useLanguageServer": true,
-  "go.gopath": "$HOME/go",
   // ESLint config: https://github.com/antfu/eslint-config
   "eslint.codeAction.showDocumentation": {
     "enable": true
