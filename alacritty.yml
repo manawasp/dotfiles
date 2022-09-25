@@ -1,0 +1,41 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+# example: https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+
+window:
+  padding:
+    x: 10
+    y: 10
+
+colors:
+  primary:
+    background: '#1d1f21'
+    foreground: '#c5c8c6'
+
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#ffffff'
+    focused_match:
+      foreground: '#ffffff'
+      background: '#000000'
+
+  normal:
+    black:   '#1d1f21'
+    red:     '#c55353'
+    green:   '#81d65a'
+    yellow:  '#ffcc33'
+    blue:    '#55a6ea'
+    magenta: '#bf67a9'
+    cyan:    '#6edacb'
+    white:   '#c5c8c6'
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Beam
+  unfocused_hollow: true
+
+working_directory: "projects/"
+

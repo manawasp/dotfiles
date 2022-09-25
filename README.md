@@ -11,7 +11,7 @@
 
 ### User
 
-- [urxvt](https://packages.debian.org/search?keywords=rxvt-unicode) : lightweight terminal emulator with Xft and Unicode support
+- [alacritty](https://alacritty.org/): modern terminal emulator that comes with sensible defaults, but allows for extensive configuration.
 - [zsh](https://www.zsh.org/): shell designed for interactive use, although it is also a powerful scripting language
 - [nvim](https://neovim.io/): hyperextensible Vim-based text editor
 - [vscode](https://code.visualstudio.com/insiders/): code editor redefined and optimized for building and debugging modern web and cloud applications
@@ -33,23 +33,32 @@ $ sudo apt update && sudo apt upgrade
 $ sudo apt install \
     gcc curl tree cloc xclip git ssh \
     i3 py3status feh lightdm \
-    rxvt-unicode zsh \
-    neovim \
+    zsh \
+    neovim fonts-noto \
     pavucontrol imagemagick vlc qiv arandr
 ```
 
-Follow official website to setup `zsh`, `oh-my-zsh`, `vscode`, `azuredatastudio`, `spotify`, `docker`, `go`, `nvm`
+Follow official website to setup:
+- [`oh-my-zsh`via curl](https://ohmyz.sh/#install)
+- [`vscode`via dpkg](https://code.visualstudio.com/download)
+- [`azuredatastudio` via dpkg](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16)
+- [`spotify` via apt](https://www.spotify.com/us/download/linux/)
+- [`docker` via apt](https://docs.docker.com/engine/install/debian/)
+- [`go` via tarball](https://go.dev/doc/install)
+- [`nvm` via curl](https://github.com/nvm-sh/nvm#installing-and-updating)
+- [`cargo` via curl](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+- [`alacritty` via cargo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 
 Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer npm install)
 - [Powerline fonts](https://github.com/powerline/fonts): pre-patched and adjusted fonts for usage with the Powerline statusline plugin (prefer manual install)
-- [Noto emoji](https://github.com/googlefonts/noto-emoji): Color and Black-and-White Noto emoji fonts, and tools for working with them
 
 ## Configure
 
 ### Global
 
 ```sh
+$ rm -f $HOME/.alacritty ln -s $HOME/.dotfiles/alacritty.yml $HOME/.alacritty.yml
 $ rm -f $HOME/.Xdefaults && ln -s $HOME/.dotfiles/.Xdefaults $HOME/.Xdefaults
 $ rm -f $HOME/.zshrc && ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 $ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
