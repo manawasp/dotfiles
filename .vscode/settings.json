@@ -255,5 +255,14 @@
   "python.linting.flake8Enabled": true,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
-  "rust-analyzer.inlayHints.typeHints.enable": false
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "cSpell.userWords": [
+    "cmds",
+    "Kyndt",
+    "luxon",
+    "redoc",
+    "sqlx",
+    "utoipa",
+    "uuidv"
+  ]
 }
