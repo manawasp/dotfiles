@@ -1,6 +1,6 @@
 {
   "editor.accessibilitySupport": "off",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.wordWrap": "on",
   "editor.fontFamily": "Input Mono, Fira Code, monospace",
@@ -15,9 +15,9 @@
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-    "source.organizeImports": false
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -109,7 +109,6 @@
     "jsonc",
     "json5"
   ],
-  "python.formatting.provider": "black",
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "css.lint.hexColorLength": "ignore",
@@ -174,10 +173,6 @@
   "volar.showWelcomePage": false,
   "volar.takeOverMode.enabled": "auto",
   "windicss.enableCodeFolding": false,
-  "prettier.enable": false, // I only use Prettier for manually formatting
-  "prettier.printWidth": 200,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
   "codesnap.containerPadding": ".7em",
   "codesnap.showLineNumbers": false,
   "codesnap.showWindowControls": false,
@@ -245,24 +240,40 @@
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, cssnano.config.*, cypress.json, env.d.ts, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
   },
   "npm.packageManager": "pnpm",
-  "python.formatting.blackPath": "",
   "yaml.format.enable": false,
   "go.toolsManagement.autoUpdate": true,
   "editor.formatOnSave": true,
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
-  "python.linting.mypyEnabled": true,
-  "python.linting.flake8Enabled": true,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "cSpell.userWords": [
     "cmds",
+    "gocache",
+    "gofiber",
+    "Infof",
     "Kyndt",
     "luxon",
+    "narset",
+    "nats",
+    "pydantic",
     "redoc",
+    "serv",
     "sqlx",
+    "ulule",
     "utoipa",
-    "uuidv"
-  ]
+    "uuidv",
+    "vuedraggable"
+  ],
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
+  "editor.minimap.enabled": false,
+  "workbench.editor.tabActionLocation": "right"
 }
