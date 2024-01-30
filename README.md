@@ -33,8 +33,7 @@ $ sudo apt update && sudo apt upgrade
 $ sudo apt install \
     gcc curl tree cloc xclip git ssh \
     i3 py3status feh lightdm \
-    zsh \
-    neovim fonts-noto \
+    zsh fonts-noto \
     pavucontrol imagemagick vlc qiv arandr
 ```
 
@@ -48,9 +47,10 @@ Follow official website to setup:
 - [`nvm` via curl](https://github.com/nvm-sh/nvm#installing-and-updating)
 - [`cargo` via curl](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 - [`alacritty` via cargo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
+- [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) prefer nighty and install it in `~/.local/bin/`
 
 Additional install:
-- [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer npm install)
+- [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer install in `~/.local/bin`) 
 - [Powerline fonts](https://github.com/powerline/fonts): pre-patched and adjusted fonts for usage with the Powerline statusline plugin (prefer manual install)
 
 ## Configure
@@ -82,10 +82,6 @@ $ sudo ln -s /home/manawasp/.dotfiles/images/inlog-background.png /etc/lightdm/i
 ### zsh plugins
 
 See `cat ~/.zshrc` header to complete zsh plugins install
-
-### nvim
-
-See [vim-plug](https://github.com/junegunn/vim-plug#neovim) to activate plugins support and run `:PlugInstall` to configure plugins
 
 ### vscode
 
