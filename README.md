@@ -58,16 +58,25 @@ Additional install:
 ### Global
 
 ```sh
-$ rm -f $HOME/.alacritty && ln -s $HOME/.dotfiles/alacritty.toml $HOME/.alacritty.toml
-$ rm -f $HOME/.spaceshiprc.zsh && ln -s $HOME/.dotfiles/spaceshiprc.zsh $HOME/.spaceshiprc.zsh
-$ rm -f $HOME/.Xdefaults && ln -s $HOME/.dotfiles/.Xdefaults $HOME/.Xdefaults
-$ rm -f $HOME/.zshrc && ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-$ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
-$ rm -f $HOME/.config/i3/config && ln -s $HOME/.dotfiles/i3config $HOME/.config/i3/config
-$ mkdir -p $HOME/.config/i3status && ln -s $HOME/.dotfiles/py3status $HOME/.config/i3status/config
-$ ln -s $HOME/.dotfiles/images/background.jpg $HOME/.config/i3/background.jpg
-$ ln -s $HOME/.dotfiles/images/lock-background.png $HOME/.config/i3/lock-background.png
-$ mkdir -p $HOME/.config/nvim && ln -s $HOME/.dotfiles/init.vim $HOME/.config/nvim/init.vim
+# Clean
+$ cd $HOME && rm -rf .alacritty.toml .spaceshiprc.zsh .Xdefault .zshrc .config/i3 .config/i3status 
+
+# Prepare directory
+$ mkdir -p $HOME/.config/i3status
+
+# Inject all symbolic link
+$ ln -s $HOME/.dotfiles/alacritty.toml $HOME/.alacritty.toml && \
+    ln -s $HOME/.dotfiles/spaceshiprc.zsh $HOME/.spaceshiprc.zsh && \
+    ln -s $HOME/.dotfiles/.Xdefaults $HOME/.Xdefaults && \
+    ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc && \
+    ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig && \
+    ln -s $HOME/.dotfiles/i3config $HOME/.config/i3/config && \
+    ln -s $HOME/.dotfiles/py3status $HOME/.config/i3status/config && \
+    ln -s $HOME/.dotfiles/images/background.jpg $HOME/.config/i3/background.jpg && \
+    ln -s $HOME/.dotfiles/images/lock-background.png $HOME/.config/i3/lock-background.png && \
+    ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim
+
+# Dedicated command as it required sudo
 $ sudo ln -s /home/manawasp/.dotfiles/images/inlog-background.png /etc/lightdm/inlog-background.png
 ```
 
