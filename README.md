@@ -25,6 +25,7 @@
 - [go](https://go.dev/doc/install): statically typed, compiled programming language
 - [nvm](https://github.com/nvm-sh/nvm): version manager for node.js, designed to be installed per-user, and invoked per-shell
 - [python](https://www.python.org/downloads/): high-level, interpreted, general-purpose programming language
+- [rust](https://www.rust-lang.org/tools/install): multi-paradigm, general-purpose programming language that emphasizes performance, type safety, and concurrency.
 
 ## Install
 
@@ -45,6 +46,7 @@ Follow official website to setup:
 - [`docker` via apt](https://docs.docker.com/engine/install/debian/)
 - [`docker compose` via apt](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
 - [`go` via tarball](https://go.dev/doc/install)
+- [`rust` via script](https://www.rust-lang.org/tools/install)
 - [`nvm` via curl](https://github.com/nvm-sh/nvm#installing-and-updating)
 - [`cargo` via curl](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 - [`alacritty` via cargo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
