@@ -50,3 +50,11 @@ export NVM_DIR="$HOME/.nvm"
 # -------------------------------- #
 
 export PATH=$PATH:/usr/local/go/bin
+export GOBIN=~/.local/bin/
+
+# -------------------------------- #
+# Extra
+# -------------------------------- #
+
+export PATH=$HOME/.local/bin:$PATH
+
