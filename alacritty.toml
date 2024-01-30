@@ -1,0 +1,53 @@
+[window.padding]
+x = 10
+y = 10
+
+# TokyoNight Alacritty Colors
+# Default colors
+[colors.primary]
+background = '#1a1b26'
+foreground = '#c0caf5'
+
+#[colors.cursor]
+#cursor = '#c0caf5'
+#text = '#1a1b26'
+
+# Normal colors
+[colors.normal]
+black = '#15161e'
+red = '#fa3c71'
+green = '#9af26a'
+yellow = '#e0af68'
+blue = '#2b84f2'
+magenta = '#a97ff4' # '#bb9af7'
+cyan = '#44dafa'
+white = '#a9b1d6'
+
+# Bright colors
+[colors.bright]
+black = '#414868'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#c0caf5'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#ff9e64'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#db4b4b'
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+shape = 'Beam'

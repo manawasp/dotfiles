@@ -58,7 +58,7 @@ Additional install:
 ### Global
 
 ```sh
-$ rm -f $HOME/.alacritty && ln -s $HOME/.dotfiles/alacritty.yml $HOME/.alacritty.yml
+$ rm -f $HOME/.alacritty && ln -s $HOME/.dotfiles/alacritty.toml $HOME/.alacritty.toml
 $ rm -f $HOME/.spaceshiprc.zsh && ln -s $HOME/.dotfiles/spaceshiprc.zsh $HOME/.spaceshiprc.zsh
 $ rm -f $HOME/.Xdefaults && ln -s $HOME/.dotfiles/.Xdefaults $HOME/.Xdefaults
 $ rm -f $HOME/.zshrc && ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
