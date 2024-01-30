@@ -43,11 +43,12 @@ Follow official website to setup:
 - [`azuredatastudio` via dpkg](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16)
 - [`spotify` via apt](https://www.spotify.com/us/download/linux/)
 - [`docker` via apt](https://docs.docker.com/engine/install/debian/)
+- [`docker compose` via apt](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
 - [`go` via tarball](https://go.dev/doc/install)
 - [`nvm` via curl](https://github.com/nvm-sh/nvm#installing-and-updating)
 - [`cargo` via curl](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 - [`alacritty` via cargo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
-- [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) prefer nighty and install it in `~/.local/bin/`
+- [`neovim`](https://github.com/neovim/neovim/blob/master/INSTALL.md) prefer nighty and install it in `~/.local/bin/`
 
 Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer install in `~/.local/bin`) 
