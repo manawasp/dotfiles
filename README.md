@@ -59,7 +59,7 @@ Additional install:
 
 ```sh
 # Clean
-$ cd $HOME && rm -rf .alacritty.toml .spaceshiprc.zsh .Xdefault .zshrc .config/i3 .config/i3status 
+$ cd $HOME && rm -rf .alacritty.toml .spaceshiprc.zsh .zshrc .config/i3 .config/i3status 
 
 # Prepare directory
 $ mkdir -p $HOME/.config/i3status
@@ -67,7 +67,6 @@ $ mkdir -p $HOME/.config/i3status
 # Inject all symbolic link
 $ ln -s $HOME/.dotfiles/alacritty.toml $HOME/.alacritty.toml && \
     ln -s $HOME/.dotfiles/spaceshiprc.zsh $HOME/.spaceshiprc.zsh && \
-    ln -s $HOME/.dotfiles/.Xdefaults $HOME/.Xdefaults && \
     ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc && \
     ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig && \
     ln -s $HOME/.dotfiles/i3config $HOME/.config/i3/config && \
