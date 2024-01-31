@@ -2,6 +2,9 @@
 x = 10
 y = 10
 
+[font]
+size = 9
+
 # TokyoNight Alacritty Colors
 # Default colors
 [colors.primary]
