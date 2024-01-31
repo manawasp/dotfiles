@@ -46,9 +46,8 @@ Follow official website to setup:
 - [`docker` via apt](https://docs.docker.com/engine/install/debian/)
 - [`docker compose` via apt](https://docs.docker.com/compose/install/linux/#install-using-the-repository)
 - [`go` via tarball](https://go.dev/doc/install)
-- [`rust` via script](https://www.rust-lang.org/tools/install)
+- [`rust` (& `cargo`) via curl](https://www.rust-lang.org/tools/install)
 - [`nvm` via curl](https://github.com/nvm-sh/nvm#installing-and-updating)
-- [`cargo` via curl](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 - [`alacritty` via cargo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 - [`neovim`](https://github.com/neovim/neovim/blob/master/INSTALL.md) prefer nighty and install it in `~/.local/bin/`
 
