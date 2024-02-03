@@ -60,22 +60,22 @@ Additional install:
 ### Global
 
 ```sh
-# Clean
-$ cd $HOME && rm -rf .alacritty.toml .spaceshiprc.zsh .zshrc .config/i3 .config/i3status 
+# Go to HOME dir to execute all command
+$ cd $HOME
 
-# Prepare directory
-$ mkdir -p $HOME/.config/i3status
+# Clean & prepare directory
+$ rm -rf .alacritty.toml .spaceshiprc.zsh .zshrc .config/i3 .config/i3status
 
 # Inject all symbolic link
-$ ln -s $HOME/.dotfiles/alacritty.toml $HOME/.alacritty.toml && \
-    ln -s $HOME/.dotfiles/spaceshiprc.zsh $HOME/.spaceshiprc.zsh && \
-    ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc && \
-    ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig && \
-    ln -s $HOME/.dotfiles/i3config $HOME/.config/i3/config && \
-    ln -s $HOME/.dotfiles/py3status $HOME/.config/i3status/config && \
-    ln -s $HOME/.dotfiles/images/background.jpg $HOME/.config/i3/background.jpg && \
-    ln -s $HOME/.dotfiles/images/lock-background.png $HOME/.config/i3/lock-background.png && \
-    ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim
+$ ln -s .dotfiles/alacritty.toml .alacritty.toml && \
+    ln -s .dotfiles/spaceshiprc.zsh .spaceshiprc.zsh && \
+    ln -s .dotfiles/.zshrc .zshrc && \
+    ln -s .dotfiles/.gitconfig .gitconfig && \
+    ln -s .dotfiles/i3config .config/i3/config && \
+    ln -s .dotfiles/i3status .config/i3status && \
+    ln -s .dotfiles/images/background.jpg .config/i3/background.jpg && \
+    ln -s .dotfiles/images/lock-background.png .config/i3/lock-background.png && \
+    ln -s .dotfiles/nvim .config/nvim
 
 # Dedicated command as it required sudo
 $ sudo ln -s /home/manawasp/.dotfiles/images/inlog-background.png /etc/lightdm/inlog-background.png
