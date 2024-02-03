@@ -16,4 +16,9 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 
 require("option")
 require("remap")
-require("lazy").setup("plugins")
+require("lazy").setup({
+  spec = {
+    { import = "plugins" },
+    { import = "plugins.lsp"},
+  }
+})

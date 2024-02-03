@@ -1,6 +1,7 @@
 return {
   "williamboman/mason.nvim",
   dependencies = {
+    "nvim-lua/plenary.nvim",
     "williamboman/mason-lspconfig.nvim",
     "jayp0521/mason-null-ls.nvim",
   },
@@ -24,6 +25,7 @@ return {
         "dockerls",
         "helm_ls",
         "html",
+        "pyright",
         "lua_ls",
         "rust_analyzer",
         "terraformls",
