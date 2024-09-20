@@ -12,7 +12,6 @@ tztime local {
         format = "%H:%M"
 }
 
-order += "backlight"
 order += "networkmanager"
 order += "apt_updates"
 order += "disk /"

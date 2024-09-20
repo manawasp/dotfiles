@@ -2,8 +2,24 @@
 x = 10
 y = 10
 
-# [font]
-# size = 9
+[font]
+size = 11
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
 
 # TokyoNight Alacritty Colors
 # Default colors
