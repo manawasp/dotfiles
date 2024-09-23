@@ -8,7 +8,7 @@ return {
   },
   config = function ()
     local keymap = vim.keymap
-    keymap.set("n", "<C-n>", ":Neotree toggle=true<CR>", { desc = "Open/Toggle neotree" })
+    keymap.set("n", "<C-p>", ":Neotree toggle=true<CR>", { desc = "Open/Toggle neotree" })
   end,
   opts = {
     close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
