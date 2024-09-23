@@ -76,7 +76,6 @@ $ ln -s .dotfiles/alacritty/alacritty.toml .alacritty.toml && \
     ln -s .dotfiles/i3/i3config .config/i3/config && \
     ln -s .dotfiles/i3/i3status .config/i3status && \
     ln -s .dotfiles/i3/images/background.jpg .config/i3/background.jpg && \
-    ln -s .dotfiles/i3/images/lock-background.png .config/i3/lock-background.png && \
     ln -s .dotfiles/nvim .config/nvim && \
     ln -s .dotfiles/tmux/tmux.conf .tmux.conf && \
     ln -s .dotfiles/tmux .config/tmux
@@ -129,6 +128,12 @@ Update `/etc/lightdm/lightdm-gtk-greeter.conf`:
 
 ```conf
 [greeter]
-background=/etc/lightdm/inlog-background.png
+background=/usr/share/pixmaps/inlog-background.png
+```
+
+And copy the background:
+
+```sh
+sudo cp .dotfiles/i3/images/inlog-background.png /usr/share/pixmaps/inlog-background.png
 ```
 
