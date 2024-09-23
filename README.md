@@ -5,21 +5,20 @@
 ### System
 
 - [debian](https://www.debian.org/devel/debian-installer/): linux distribution composed of free and open-source software.
-- [i3](https://i3wm.org/): dynamic tiling window manager.
 - [LightDM](https://wiki.archlinux.org/title/LightDM): cross-desktop display manager.
+- [i3](https://i3wm.org/): dynamic tiling window manager.
 - [py3status](https://py3status.readthedocs.io/en/latest/): extensible i3status wrapper written in Python.
 
 ### User
 
 - [alacritty](https://alacritty.org/): modern terminal emulator that comes with sensible defaults, but allows for extensive configuration.
 - [zsh](https://www.zsh.org/): shell designed for interactive use, although it is also a powerful scripting language.
+- [starship](https://starship.rs/guide/): minimal, blazing-fast, and infinitely customizable prompt.
 - [nvim](https://neovim.io/): hyperextensible Vim-based text editor.
 - [eza](https://github.com/eza-community/eza): a modern replacement for ls.
 - [zoxide](https://github.com/ajeetdsouza/zoxide): a smarter cd command, inspired by z and autojump.
 - [vscode](https://code.visualstudio.com/insiders/): code editor redefined and optimized for building and debugging modern web and cloud applications.
-- [azuredatastudio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio): light-weight tool for managing SQL Server, Azure SQL Database, PostgreSQL.
 - [spotify](https://www.spotify.com/fr/download/linux/): audio streaming and media services provider.
-- [pexels.com](https://www.pexels.com/): free stock photos, royalty free images & videos.
 
 ### Programming
 
@@ -36,8 +35,7 @@ $ sudo apt update && sudo apt upgrade
 $ sudo apt install \
     gcc curl tree cloc xclip git ssh \
     i3 py3status feh lightdm \
-    eza tmux \
-    zsh fonts-noto \
+    zsh fonts-noto eza tmux \
     pavucontrol imagemagick vlc qiv arandr
 ```
 
@@ -53,6 +51,7 @@ Follow official website to setup:
 - [`nvm` via curl](https://github.com/nvm-sh/nvm#installing-and-updating)
 - [`alacritty` via cargo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 - [`neovim`](https://github.com/neovim/neovim/blob/master/INSTALL.md) prefer nighty and install it in `~/.local/bin/`
+- [`starship` via curl](https://starship.rs/guide/)
 
 Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer install in `~/.local/bin`)
@@ -67,18 +66,20 @@ Additional install:
 $ cd $HOME
 
 # Clean & prepare directory
-$ rm -rf .alacritty.toml .spaceshiprc.zsh .zshrc .config/i3 .config/i3status
+$ rm -rf .alacritty.toml .config/starship.toml .zshrc .config/i3 .config/i3status
 
 # Inject all symbolic link
-$ ln -s .dotfiles/alacritty.toml .alacritty.toml && \
-    ln -s .dotfiles/spaceshiprc.zsh .spaceshiprc.zsh && \
-    ln -s .dotfiles/.zshrc .zshrc && \
-    ln -s .dotfiles/.gitconfig .gitconfig && \
-    ln -s .dotfiles/i3config .config/i3/config && \
-    ln -s .dotfiles/i3status .config/i3status && \
-    ln -s .dotfiles/images/background.jpg .config/i3/background.jpg && \
-    ln -s .dotfiles/images/lock-background.png .config/i3/lock-background.png && \
-    ln -s .dotfiles/nvim .config/nvim
+$ ln -s .dotfiles/alacritty/alacritty.toml .alacritty.toml && \
+    ln -s .dotfiles/starship/starship.toml .config/starship.toml && \
+    ln -s .dotfiles/zshrc/zshrc .zshrc && \
+    ln -s .dotfiles/gitconfig/.gitconfig .gitconfig && \
+    ln -s .dotfiles/i3/i3config .config/i3/config && \
+    ln -s .dotfiles/i3/i3status .config/i3status && \
+    ln -s .dotfiles/i3/images/background.jpg .config/i3/background.jpg && \
+    ln -s .dotfiles/i3/images/lock-background.png .config/i3/lock-background.png && \
+    ln -s .dotfiles/nvim .config/nvim && \
+    ln -s .dotfiles/tmux/tmux.conf .tmux.conf && \
+    ln -s .dotfiles/tmux .config/tmux
 
 # Dedicated command as it required sudo
 $ sudo ln -s /home/manawasp/.dotfiles/images/inlog-background.png /etc/lightdm/inlog-background.png
@@ -107,8 +108,8 @@ See `cat ~/.zshrc` header to complete zsh plugins install
 ```sh
 # The code editor must have been opened before
 # Also I am using the insiders version
-$ cd $HOME/.dotfiles/.vscode/ && cat extensions.list | grep -v '^#' | xargs -L1 code-insiders --install-extension
-$ ln -s $HOME/.dotfiles/.vscode/settings.json $HOME/.config/Code\ -\ Insiders/User/settings.json
+$ cd $HOME/.dotfiles/.vscode/ && cat extensions.list | grep -v '^#' | xargs -L1 code --install-extension
+$ ln -s $HOME/.dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
 ```
 
 ### Docker
