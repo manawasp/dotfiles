@@ -19,6 +19,7 @@
 - [zoxide](https://github.com/ajeetdsouza/zoxide): a smarter cd command, inspired by z and autojump.
 - [vscode](https://code.visualstudio.com/insiders/): code editor redefined and optimized for building and debugging modern web and cloud applications.
 - [spotify](https://www.spotify.com/fr/download/linux/): audio streaming and media services provider.
+- [bat](https://github.com/sharkdp/bat): cat(1) clone with syntax highlighting and Git integration.
 
 ### Programming
 
@@ -35,7 +36,7 @@ $ sudo apt update && sudo apt upgrade
 $ sudo apt install \
     gcc curl tree cloc xclip git ssh \
     i3 py3status feh lightdm \
-    zsh fonts-noto eza tmux \
+    zsh fonts-noto eza tmux bat \
     pavucontrol imagemagick vlc qiv arandr
 ```
 
@@ -52,6 +53,8 @@ Follow official website to setup:
 - [`alacritty` via cargo](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 - [`neovim`](https://github.com/neovim/neovim/blob/master/INSTALL.md) prefer nighty and install it in `~/.local/bin/`
 - [`starship` via curl](https://starship.rs/guide/)
+- [`bat` setup symlink](https://github.com/sharkdp/bat?tab=readme-ov-file#on-ubuntu-using-apt)
+- [`zoxide` via curl](https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation)
 
 Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer install in `~/.local/bin`)
