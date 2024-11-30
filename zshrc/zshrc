@@ -54,6 +54,14 @@ export PATH=$PATH:/usr/local/go/bin
 export GOBIN=~/.local/bin/
 
 # -------------------------------- #
+# Python
+# -------------------------------- #
+
+export PATHBREAKPOINT=ipdb.set_trace
+export PYTHONONWRITEBYTECODE=true
+export PYTHONPYCACHEPREFIX=$HOME/.pycache
+
+# -------------------------------- #
 # Extra
 # -------------------------------- #
 
