@@ -19,7 +19,7 @@
   "editor.formatOnSave": false,
 
   // Auto fix
-  "eslint.enable": false, // TMP
+  "eslint.enable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
@@ -285,20 +285,30 @@
     "luxon",
     "narset",
     "nats",
+    "nrst",
     "Nuxt",
     "outf",
+    "println",
     "pydantic",
     "pydot",
     "pytest",
     "redoc",
+    "replacen",
+    "rstest",
+    "sadd",
+    "serde",
     "serv",
+    "smembers",
     "sqlx",
+    "srem",
     "ulule",
     "utoipa",
     "uuidv",
     "venv",
     "virtualenv",
+    "VITE",
     "vuedraggable",
+    "vueuse",
     "werkzeug",
     "xvfz",
     "yarl"
@@ -322,5 +332,6 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnSave": true
-  }
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
 }

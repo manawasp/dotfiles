@@ -1,0 +1,139 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "model_parameters": [],
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "version": "2"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "icon_theme": "Catppuccin Mocha",
+  "soft_wrap": "editor_width",
+  "vim_mode": false,
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "buffer_font_family": "Input Mono, Fira Code, monospace",
+  "theme": {
+    "mode": "system",
+    "light": "Dracula",
+    "dark": "One Dark"
+  },
+  "current_line_highlight": "gutter",
+  "cursor_blink": false,
+
+  // only lowercase letters => insensitive
+  // contains uppercase letters => sensitive
+  "use_smartcase_search": true,
+
+  // Toolbar
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": true,
+    "agent_review": true,
+    "code_actions": false
+  },
+
+  // Remove the < > buttons from the tab bar
+  "tab_bar": {
+    "show": false,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+
+  // Show file type icons in the tab bar. Also color them according to the
+  // git status.
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+
+  // Decrease the horizontal indent size of files & folders in the project
+  // panel to avoid horizontal scrolling
+  "project_panel": {
+    "indent_size": 16,
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+  "outline_panel": {
+    "indent_size": 16,
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+
+  // Set a preferred line lenth, showing a vertical gutter bar
+  "preferred_line_length": 160,
+
+  // Set global tab size to 4, you could also make this language-specific but 4
+  // spaces works for me
+  "tab_size": 2,
+
+  // Whitespace
+  "show_whitespaces": "boundary",
+
+  "languages": {
+    "Markdown": {
+      // Wrap text according to the previously defined preferred line length.
+      "soft_wrap": "preferred_line_length",
+
+      // do not remove any trailing whitespace since line breaks in
+      // lists (without adding a new punctuation) rely on whitespaces.
+      "remove_trailing_whitespace_on_save": false
+    }
+  },
+
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy" // rust-analyzer.check.command (default: "check")
+        }
+      }
+    }
+  },
+
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+
+  "features": {
+    "copilot": true
+  },
+
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/.idea",
+    "**/.vscode",
+    "**/.nuxt",
+    "**/.output",
+    "**/node_modules",
+    "**/dist",
+    "**/.venv",
+    "**/venv",
+    "**/.venv*"
+  ]
+}
+
