@@ -8,6 +8,10 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
@@ -31,12 +35,13 @@
   },
   "current_line_highlight": "gutter",
   "cursor_blink": false,
+  "hide_mouse": "never",
   "gutter": {
     "line_numbers": true,
     "code_actions": false,
     "runnables": false,
     "breakpoints": false,
-    "folds": false,
+    "folds": false
   },
 
   // only lowercase letters => insensitive
@@ -119,6 +124,12 @@
       "prettier": {
         "allowed": false
       }
+    },
+    "Python": {
+      "tab_size": 4
+    },
+    "Rust": {
+      "tab_size": 4
     },
     "TypeScript": {
       "prettier": {
