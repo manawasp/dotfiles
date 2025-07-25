@@ -7,17 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
   "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-thinking"
+    },
+    "model_parameters": [],
     "inline_assistant_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
     },
-    "model_parameters": [],
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "version": "2"
   },
   "scrollbar": {
     "show": "never"
@@ -25,8 +33,8 @@
   "icon_theme": "Catppuccin Mocha",
   "soft_wrap": "editor_width",
   "vim_mode": false,
-  "ui_font_size": 16,
-  "buffer_font_size": 14,
+  "ui_font_size": 10,
+  "buffer_font_size": 9,
   "buffer_font_family": "Input Mono, Fira Code, monospace",
   "theme": {
     "mode": "system",
@@ -38,10 +46,9 @@
   "hide_mouse": "never",
   "gutter": {
     "line_numbers": true,
-    "code_actions": false,
     "runnables": false,
     "breakpoints": false,
-    "folds": false
+    "folds": false,
   },
 
   // only lowercase letters => insensitive
@@ -75,13 +82,13 @@
   // Decrease the horizontal indent size of files & folders in the project
   // panel to avoid horizontal scrolling
   "project_panel": {
-    "indent_size": 16,
+    "indent_size": 10,
     "indent_guides": {
       "show": "never"
     }
   },
   "outline_panel": {
-    "indent_size": 16,
+    "indent_size": 8,
     "indent_guides": {
       "show": "never"
     }
@@ -106,8 +113,22 @@
     }
   },
 
+  "language_models": {
+    "openai": {
+      "api_url": null,
+      "available_models": [
+        {
+          "name": "Qwen2.5-Coder-32B-Instruct",
+          "display_name": "Numberly Model Server",
+          "max_tokens": 12000
+        }
+      ]
+    }
+  },
+
   "languages": {
     "Markdown": {
+      "tab_size": 4,
       // Wrap text according to the previously defined preferred line length.
       "soft_wrap": "preferred_line_length",
 
@@ -117,34 +138,45 @@
     },
     "JavaScript": {
       "prettier": {
-        "allowed": false
+        "allowed": false,
+        "formatter": null
       }
     },
-    "vue": {
+    "Vue.js": {
+      // "language_servers": ["vtsls"],
       "prettier": {
-        "allowed": false
+        "allowed": false,
+        "formatter": null
       }
-    },
-    "Python": {
-      "tab_size": 4
-    },
-    "Rust": {
-      "tab_size": 4
     },
     "TypeScript": {
       "prettier": {
-        "allowed": false
-      },
-      "format_on_save": {
-          "external": {
-              "command": "eslint",
-              "arguments": [
-                  "--stdin-filename",
-                  "{buffer_path}",
-                  "--fix"
-              ]
-          }
+        "allowed": false,
+        "formatter": null
       }
+    },
+
+    "Python": {
+        "tab_size": 4,
+        "language_servers": ["pyright", "ruff"],
+        "format_on_save": "on",
+        "formatter": [
+            {
+                "code_actions": {
+                    "source.organizeImports.ruff": false,
+                    "source.fixAll.ruff": true
+                }
+            },
+            {
+                "language_server": {
+                    "name": "ruff"
+                }
+            }
+        ]
+    },
+
+    "Rust": {
+      "tab_size": 4
     }
   },
 
@@ -164,8 +196,8 @@
     }
   },
 
-  "features": {
-    "copilot": true
+  "file_types": {
+    "JSON": ["**/*.avsc"]
   },
 
   "file_scan_exclusions": [
@@ -174,6 +206,7 @@
     "**/.hg",
     "**/.jj",
     "**/CVS",
+    "**/.coverage",
     "**/.DS_Store",
     "**/Thumbs.db",
     "**/.classpath",
@@ -184,17 +217,13 @@
     "**/.output",
     "**/node_modules",
     "**/dist",
+    "**/.mypy_cache",
+    "**/.ropeproject",
+    "**/.ruff_cache",
+    "**/.pytest_cache",
+    "**/*.egg-info",
     "**/.venv",
     "**/venv",
     "**/.venv*"
-  ],
-
-  "file_associations": {
-    "*.vue": "vue"
-  },
-  "language": "vue",
-  "language_server": {
-    "command": "vue-language-server",
-    "args": ["--stdio"]
-  }
+  ]
 }
