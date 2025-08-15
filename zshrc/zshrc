@@ -66,6 +66,7 @@ export PYTHONPYCACHEPREFIX=$HOME/.pycache
 # -------------------------------- #
 
 export PATH=$HOME/.local/bin:$PATH
-
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH
+#
 # Launch startship
 eval "$(starship init zsh)"

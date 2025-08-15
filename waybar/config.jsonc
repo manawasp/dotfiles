@@ -1,0 +1,124 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 0,
+  "modules-left": [
+    "sway/workspaces"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "memory",
+    "cpu",
+    "clock",
+    "tray"
+  ],
+  "sway/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "format": "<span font_desc='Font Awesome 7 Free'>{icon}</span>",
+    "on-click": "activate",
+    "persistent-workspaces": {
+      "*": [1,2,3,4,5,6,7,8,9]
+    },
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "default": ""
+    }
+  },
+  "network": {
+    "format-wifi": "<span font_desc='Font Awesome 7 Free 8'>  </span>{essid} ",
+    "format-ethernet": "<span color='#7FFF00'> </span>Wired ",
+    "tooltip-format": "<span color='#FF1493'> 󰅧  </span>{bandwidthUpBytes}  <span color='#00BFFF'> 󰅢  </span>{bandwidthDownBytes}",
+    "format-linked": "<span color='#FFA500'> 󱘖 </span>",
+    "format-disconnected": "<span color='#ed385c' font_desc='Font Awesome 7 Free 8'> </span>Disconnected ",
+    "format-alt": "<span font_desc='Font Awesome 7 Free 8'>  </span>{signalStrength}% ",
+    "interval": 1
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span color='#28CD41'> {icon} </span>{capacity}% ",
+    "format-charging": " 󱐋 {capacity}%",
+    "interval": 1,
+    "format-icons": ["󰂎", "󰁼", "󰁿", "󰂁", "󰁹"],
+    "tooltip": true
+  },
+  "pulseaudio": {
+    "format": "<span>{icon}</span> {volume}% ",
+    "format-muted": "<span color='#ed385c' font_desc='Font Awesome 7 Free 8'>  </span>0%",
+    "format-icons": {
+      "headphone": "<span font_desc='Font Awesome 7 Free 8'></span>",
+      "hands-free": "<span font_desc='Font Awesome 7 Free 8'></span>",
+      "headset": "<span font_desc='Font Awesome 7 Free 8'></span>",
+      "phone": "<span font_desc='Font Awesome 7 Free 8'></span>",
+      "portable": "<span font_desc='Font Awesome 7 Free 8'></span>",
+      "car": "<span font_desc='Font Awesome 7 Free 8'></span>",
+      "default": [
+        "<span font_desc='Font Awesome 7 Free 8'></span>",
+        "<span font_desc='Font Awesome 7 Free 8'></span>",
+        "<span font_desc='Font Awesome 7 Free 8'></span>"
+      ]
+    },
+    "on-click-right": "pavucontrol -t 3",
+    "on-click": "pactl -- set-sink-mute 0 toggle",
+    "tooltip": true,
+    "tooltip-format": "Current System Volume: {volume}%"
+  },
+  "memory": {
+    "format": "<span> ⛁ </span>{used:0.1f}G ",
+    "tooltip": true,
+    "tooltip-format": "{used:0.2f}G/{total:0.2f}G"
+  },
+  "cpu": {
+    "format": "<span> ⚙ </span>{usage}% ",
+    "tooltip": true
+  },
+  "clock": {
+    "interval": 1,
+    "timezone": "Europe/Paris",
+    "format": "{:%H:%M}",
+    "tooltip": true,
+    "tooltip-format": "{:L%Y Year %m Month %d Day, %A}"
+  },
+  "tray": {
+    "icon-size": 17,
+    "spacing": 6
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "<span color='#FFD700'>{icon}</span>{percent}% ",
+    "tooltip": true,
+    "tooltip-format": "Current Screen Brightness: {percent}%",
+    "format-icons": [
+      "<span color='#696969'> 󰃞 </span>",  // Dark - Dark Gray
+      "<span color='#A9A9A9'> 󰃝 </span>",  // Medium - Gray
+      "<span color='#FFFF66'> 󰃟 </span>",  // Bright - Lemon Yellow
+      "<span color='#FFD700'> 󰃠 </span>"   // Brightest - Gold
+    ]
+  },
+  "bluetooth": {
+    "on-click": "blueman-manager",
+    "format": "<span font_desc='Font Awesome 7 Free 10'>  </span>{status} ",
+    "format-connected": "<span  font_desc='Font Awesome 7 Free'>  </span>{device_alias} ",
+    "format-connected-battery": "<span font_desc='Font Awesome 7 Free'>  </span>{device_alias}{device_battery_percentage}% ",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+  }
+}
