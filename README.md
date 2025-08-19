@@ -110,6 +110,12 @@ $ sudo usermod -aG docker ${USER}
 
 _note: will need to reboot_
 
+### Waycolor
+
+Small script to take a color from the current screen
+
+```sh
+ln ~/.dotfiles/scripts/waycolor ~/.local/bin/waycolor && chmod +x ~/.local/bin/waycolor
 ### LightDM
 
 Update `/etc/lightdm/lightdm-gtk-greeter.conf`:
