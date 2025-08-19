@@ -191,7 +191,9 @@ bindsym $mod+m mode "resize"
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    bindsym Print exec grim ~/Pictures/screenshot-$(date +'%Y-%m-%d-%H%M%S').png
+    bindsym Shift+Print exec grim -g "$(slurp)" ~/Pictures/screenshot-$(date +'%Y-%m-%d-%H%M%S').png
+    bindsym Ctrl+Print exec grim -g "$(slurp)" - | swappy -f -
 
 #
 # Status Bar:

@@ -1,5 +1,7 @@
 # Manawasp's Dotfiles
 
+![screenshot of the system setup](./screenshot.png)
+
 ## Overview
 
 ### System
@@ -37,10 +39,11 @@
 
 ```sh
 sudo apt update && sudo apt upgrade &&  sudo apt install \
-    gcc curl tree cloc xclip git ssh \
+    gcc curl tree cloc git ssh \
     sway waybar swaylock swayidle tofi lightdm \
     zsh ripgrep fd-find fonts-noto eza tmux bat jq \
-    pavucontrol imagemagick vlc qiv
+    slurp grim swappy imv \
+    pavucontrol imagemagick vlc
 ```
 
 Follow official website to setup:

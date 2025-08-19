@@ -21,6 +21,8 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------- #
 
 alias ls='eza'
+alias imv='imv-wayland'
+alias cat='bat'
 
 # -------------------------------- #
 # Git
