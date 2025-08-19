@@ -38,7 +38,7 @@
 ## Install
 
 ```sh
-sudo apt update && sudo apt upgrade &&  sudo apt install \
+sudo apt update && sudo apt upgrade && sudo apt install \
     gcc curl tree cloc git ssh \
     sway waybar swaylock swayidle tofi lightdm \
     zsh ripgrep fd-find fonts-noto eza tmux bat jq \
@@ -103,9 +103,9 @@ See `cat ~/.zshrc` header to complete zsh plugins install
 
 Fix docker permission denied
 
-```
-$ sudo groupadd docker
-$ sudo usermod -aG docker ${USER}
+```sh
+sudo groupadd docker && \
+  sudo usermod -aG docker ${USER}
 ```
 
 _note: will need to reboot_
