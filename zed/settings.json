@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
@@ -33,8 +36,8 @@
   "icon_theme": "Catppuccin Mocha",
   "soft_wrap": "editor_width",
   "vim_mode": false,
-  "ui_font_size": 10,
-  "buffer_font_size": 9,
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
   "buffer_font_family": "Input Mono, Fira Code, monospace",
   "theme": {
     "mode": "system",
@@ -106,10 +109,8 @@
 
   "formatter": {
     "code_actions": {
-      // Use ESLint's --fix:
       "source.fixAll.eslint": true,
-      // Organize imports on save:
-      "source.organizeImports": true
+      "source.organizeImports": false
     }
   },
 
