@@ -8,6 +8,7 @@
 - [LightDM](https://wiki.archlinux.org/title/LightDM): cross-desktop display manager.
 - [sway](https://github.com/swaywm/sway): i3-compatible Wayland compositor.
 - [waybar](https://github.com/Alexays/Waybar): Highly customizable Wayland bar for Sway and Wlroots based compositors.
+- [tofi](https://github.com/philj56/tofi/tree/master): Tiny dynamic menu for Wayland.
 
 ### User
 
@@ -35,10 +36,9 @@
 ## Install
 
 ```sh
-$ sudo apt update && sudo apt upgrade
-$ sudo apt install \
+sudo apt update && sudo apt upgrade &&  sudo apt install \
     gcc curl tree cloc xclip git ssh \
-    sway waybar swaylock swayidle lightdm \
+    sway waybar swaylock swayidle tofi lightdm \
     zsh ripgrep fd-find fonts-noto eza tmux bat jq \
     pavucontrol imagemagick vlc qiv
 ```
@@ -67,20 +67,22 @@ Additional install:
 
 ```sh
 # Go to HOME dir to execute all command
-$ cd $HOME
+cd $HOME
 
 # Clean & prepare directory
-$ rm -rf .alacritty.toml .config/starship.toml .zshrc .config/sway .config/waybar .config/zed
+rm -rf .alacritty.toml .config/starship.toml .zshrc .config/sway .config/waybar .config/zed
 
 # Inject all symbolic link
-$ ln -s .dotfiles/alacritty/alacritty.toml .alacritty.toml && \
+ln -s .dotfiles/alacritty/alacritty.toml .alacritty.toml && \
     ln -s .dotfiles/starship/starship.toml .config/starship.toml && \
     ln -s .dotfiles/zshrc/zshrc .zshrc && \
     ln -s .dotfiles/gitconfig/.gitconfig .gitconfig && \
     ln -s .dotfiles/sway .config/sway && \
     ln -s .dotfiles/waybar .config/waybar && \
+    ln -s .dotfiles/tofi .config/tofi && \
     ln -s .dotfiles/zed .config/zed && \
     ln -s .dotfiles/nvim .config/nvim
+```
 
 ### Fonts
 
@@ -93,15 +95,6 @@ Download and unzip fonts into `~/.local/share/fonts` and reload font cache `fc-c
 
 See `cat ~/.zshrc` header to complete zsh plugins install
 
-
-### vscode
-
-```sh
-# The code editor must have been opened before
-# Also I am using the insiders version
-$ cd $HOME/.dotfiles/.vscode/ && cat extensions.list | grep -v '^#' | xargs -L1 code --install-extension
-$ ln -s $HOME/.dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
-```
 
 ### Docker
 

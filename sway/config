@@ -13,7 +13,7 @@ set $right l
 set $term alacritty
 
 # Your preferred application launcher
-set $menu wmenu-run
+set $menu tofi-run | xargs swaymsg exec --
 
 # Borders
 default_border pixel 0
