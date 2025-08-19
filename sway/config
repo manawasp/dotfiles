@@ -31,7 +31,7 @@ for_window [app_id="waybar"] sticky enable
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
-output * bg $HOME/.dotfiles/wallpaper/main.jpg fill
+output * bg $HOME/.dotfiles/wallpaper/main-astral.jpg fill
 
 ### Idle configuration
 exec swayidle -w \
