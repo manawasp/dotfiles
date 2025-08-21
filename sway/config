@@ -43,8 +43,6 @@ exec swayidle -w \
 
 bindsym ctrl+Shift+l exec swaylock 
 
-set GTK_THEME=Adwaita:dark
-
 ### Key bindings
 #
 # Basics:
