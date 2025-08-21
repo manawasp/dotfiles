@@ -60,6 +60,7 @@ Follow official website to setup:
 - [`starship` via curl](https://starship.rs/guide/)
 - [`bat` setup symlink](https://github.com/sharkdp/bat?tab=readme-ov-file#on-ubuntu-using-apt)
 - [`zoxide` via curl](https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation)
+- [swaylock-effects](https://github.com/mortie/swaylock-effects): Swaylock, with fancy effects
 
 Additional install:
 - [diff so fancy](https://github.com/so-fancy/diff-so-fancy): strives to make your diffs human readable instead of machine readable (prefer install in `~/.local/bin`)

@@ -40,11 +40,11 @@
   },
   "network": {
     "format-wifi": "<span font_desc='Font Awesome 7 Free 8'>  </span>{essid} ",
-    "format-ethernet": "<span color='#7FFF00'> </span>Wired ",
-    "tooltip-format": "<span color='#FF1493'> 󰅧  </span>{bandwidthUpBytes}  <span color='#00BFFF'> 󰅢  </span>{bandwidthDownBytes}",
+    "format-ethernet": "<span>  </span> Wired ",
+    "tooltip-format": "<span color='#FF1493'> 󰅧  </span> {bandwidthUpBytes}  <span color='#00BFFF'> 󰅢  </span> {bandwidthDownBytes}",
     "format-linked": "<span color='#FFA500'> 󱘖 </span>",
-    "format-disconnected": "<span color='#ed385c' font_desc='Font Awesome 7 Free 8'> </span>Disconnected ",
-    "format-alt": "<span font_desc='Font Awesome 7 Free 8'>  </span>{signalStrength}% ",
+    "format-disconnected": "<span color='#ed385c' font_desc='Font Awesome 7 Free 8'>  </span> Disconnected ",
+    "format-alt": "<span font_desc='Font Awesome 7 Free 8'>  </span> {signalStrength}% ",
     "interval": 1
   },
   "battery": {
@@ -97,18 +97,19 @@
   },
   "tray": {
     "icon-size": 17,
-    "spacing": 6
+    "spacing": 6,
+    "modules": ["network"]
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "<span color='#FFD700'>{icon}</span>{percent}% ",
+    "format": "<span>{icon}</span> {percent}% ",
     "tooltip": true,
     "tooltip-format": "Current Screen Brightness: {percent}%",
     "format-icons": [
-      "<span color='#696969'> 󰃞 </span>",  // Dark - Dark Gray
-      "<span color='#A9A9A9'> 󰃝 </span>",  // Medium - Gray
-      "<span color='#FFFF66'> 󰃟 </span>",  // Bright - Lemon Yellow
-      "<span color='#FFD700'> 󰃠 </span>"   // Brightest - Gold
+      "<span> 󰃞 </span>",  // Dark - Dark Gray
+      "<span> 󰃝 </span>",  // Medium - Gray
+      "<span> 󰃟 </span>",  // Bright - Lemon Yellow
+      "<span> 󰃠 </span>"   // Brightest - Gold
     ]
   },
   "bluetooth": {

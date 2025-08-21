@@ -33,6 +33,8 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 output * bg $HOME/.dotfiles/wallpaper/main-astral.jpg fill
 
+exec --no-startup-id nm-applet
+
 ### Idle configuration
 exec swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
@@ -40,6 +42,8 @@ exec swayidle -w \
          before-sleep 'swaylock -f -c 000000'
 
 bindsym ctrl+Shift+l exec swaylock 
+
+set GTK_THEME=Adwaita:dark
 
 ### Key bindings
 #
