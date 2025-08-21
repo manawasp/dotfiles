@@ -81,11 +81,12 @@ ln -s .dotfiles/alacritty/alacritty.toml .alacritty.toml && \
     ln -s .dotfiles/starship/starship.toml .config/starship.toml && \
     ln -s .dotfiles/zshrc/zshrc .zshrc && \
     ln -s .dotfiles/gitconfig/.gitconfig .gitconfig && \
-    ln -s .dotfiles/sway .config/sway && \
-    ln -s .dotfiles/waybar .config/waybar && \
-    ln -s .dotfiles/tofi .config/tofi && \
-    ln -s .dotfiles/zed .config/zed && \
-    ln -s .dotfiles/nvim .config/nvim
+    ln -s .dotfiles/sway/ .config/sway && \
+    ln -s .dotfiles/waybar/ .config/waybar && \
+    ln -s .dotfiles/swaylock/ .config/swaylock && \
+    ln -s .dotfiles/tofi/ .config/tofi && \
+    ln -s .dotfiles/zed/ .config/zed && \
+    ln -s .dotfiles/nvim/ .config/nvim
 ```
 
 ### Fonts
@@ -117,6 +118,8 @@ Small script to take a color from the current screen
 
 ```sh
 ln ~/.dotfiles/scripts/waycolor ~/.local/bin/waycolor && chmod +x ~/.local/bin/waycolor
+```
+
 ### LightDM
 
 Update `/etc/lightdm/lightdm-gtk-greeter.conf`:
