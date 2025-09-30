@@ -31,6 +31,9 @@ alias cat='bat'
 # Go to project root
 alias gitup='cd "$(git rev-parse --show-toplevel)"'
 
+# Clean branch no present anymore remotely
+alias gitclean="git fetch --prune && git branch -vv | grep 'gone]' | awk '{print $1}' | xargs git branch -D"
+
 # -------------------------------- #
 # Misc
 # -------------------------------- #
@@ -64,11 +67,18 @@ export PYTHONONWRITEBYTECODE=true
 export PYTHONPYCACHEPREFIX=$HOME/.pycache
 
 # -------------------------------- #
+# Kubernetes
+# -------------------------------- #
+
+alias k="kubectl"
+alias dps="docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Image}}'"
+
+# -------------------------------- #
 # Extra
 # -------------------------------- #
 
 export PATH=$HOME/.local/bin:$PATH
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH
-#
+
 # Launch startship
 eval "$(starship init zsh)"
